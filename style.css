@@ -1,0 +1,113 @@
+body {
+	background-color: #383738;
+	color: white;
+	font-family: Consolas,monaco,monospace;
+}
+
+.logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+}
+
+.menu, .title {
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.main {
+	margin-top: 10px;
+	margin-left: 20%;
+	margin-right: 20%;
+	text-align: justify;
+	text-justify: inter-word;
+	text-align-last: center;
+	font-size: 18px;
+}
+.updates {
+	font-size: 17px;
+	margin-top: 10px;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+.list {
+	font-size: 20px;
+	margin-top: 10px;
+	margin-left: 1%;
+	margin-right: 20%;
+}
+.image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+.update {
+	margin-top: 10px;
+	margin-left: 30%;
+	margin-right: 30%;
+	text-align: justify;
+	text-justify: inter-word;
+	text-align-last: center;
+	font-size: 18px;
+}
+.row {
+	background-image: radial-gradient(circle at center, white 0, #383738, #383738 100%);
+}
+.column {
+  float: left;
+  width: 49%;
+  margin-top: 20%;
+  margin-bottom: 20%;
+  margin-right: -30%;
+  margin-left: 10%;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* links */
+.menu a:link {
+	color: lightblue;
+	text-decoration: none;
+	font-size: 25px;
+}
+.menu a:visited {
+	color: lightblue;
+	text-decoration: none;
+	font-size: 25px;
+}
+.menu a:hover {
+  color: lightgrey;
+  text-decoration: none;
+  font-size: 25px;
+}
+.menu a:active {
+  color: lightblue;
+  text-decoration: none;
+  font-size: 25px;
+}
+/* links for updates */
+.updates a:link {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+.updates a:visited {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+.updates a:hover {
+	color: #EBECF8;
+	text-decoration: none;
+	font-weight: bold;
+}
+.updates a:active {
+	color: #EBECF8;
+	text-decoration: none;
+	font-weight: bold;
+}
