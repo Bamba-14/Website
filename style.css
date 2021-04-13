@@ -111,3 +111,24 @@ body {
 	text-decoration: none;
 	font-weight: bold;
 }
+/* links for mid-text in update */
+.update a:link {
+	color: lightblue;
+	text-decoration: none;
+	font-weight: bold;
+}
+.update a:visited {
+	color: lightblue;
+	text-decoration: none;
+	font-weight: bold;
+}
+.update a:hover {
+	color: #EBECF8;
+	text-decoration: none;
+	font-weight: bold;
+}
+.update a:active {
+	color: #EBECF8;
+	text-decoration: none;
+	font-weight: bold;
+}
