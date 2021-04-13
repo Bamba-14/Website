@@ -90,6 +90,41 @@ body {
   text-decoration: none;
   font-size: 25px;
 }
+footer {
+	background-color: #383738;
+	color: white;
+	font-family: Consolas,monaco,monospace;
+	position: fixed;
+	font-size: 18px;
+	display: inline-block;
+	left: 300px;
+}
+.rowf {
+	position: fixed;
+	bottom: 15px;
+	width: 90%;
+}
+.columnf {
+  float: left;
+  width: 800px;
+  margin-top: 20%;
+  margin-bottom: 10px;
+  margin-right: -31%;
+  margin-left: 20px;
+}
+.rowf::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.socials
+{
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	float: left;
+	width: 60px;
+}
 /* links for updates */
 .updates a:link {
 	color: white;
