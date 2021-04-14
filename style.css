@@ -85,29 +85,11 @@ body {
 	color: white;
 	font-family: Consolas,monaco,monospace;
 	position: absolute;
-	bottom: 0;
+	bottom: 5px;
 	font-size: 18px;
 	display: inline-block;
 	left: 10%;
 	height: 2.5rem;
-}
-.rowf {
-	position: fixed;
-	bottom: 15px;
-	width: 90%;
-}
-.columnf {
-  float: left;
-  width: 800px;
-  margin-top: 20%;
-  margin-bottom: 10px;
-  margin-right: -31%;
-  margin-left: 20px;
-}
-.rowf::after {
-  content: "";
-  clear: both;
-  display: table;
 }
 .socials
 {
@@ -116,6 +98,7 @@ body {
 	margin-right: auto;
 	float: left;
 	width: 60px;
+	padding-left: 5%
 }
 .socials:hover .image {
   opacity: 0.3;
