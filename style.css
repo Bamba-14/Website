@@ -1,5 +1,5 @@
 title {
-	text-color: #52C8EE;
+	color: #52C8EE;
 }
 body {
 	background-color: #383738;
@@ -30,13 +30,13 @@ body {
 	font-size: 18px;
 }
 .updates {
-	font-size: 17px;
+	font-size: 20px;
 	margin-top: 10px;
 	margin-left: 20%;
 	margin-right: 20%;
 }
 .list {
-	font-size: 20px;
+	font-size: 16px;
 	margin-top: 10px;
 	margin-left: 1%;
 	margin-right: 20%;
