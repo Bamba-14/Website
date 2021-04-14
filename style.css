@@ -80,7 +80,7 @@ body {
   clear: both;
   display: table;
 }
-footer {
+#footer {
 	background-color: #383738;
 	color: white;
 	font-family: Consolas,monaco,monospace;
