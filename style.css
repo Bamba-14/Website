@@ -113,7 +113,7 @@ footer {
 }
 @media only screen and (max-width:620px) {
   /* For mobile phones: */
-  .menu, .rowf, .updates {
+  .main, .rowf, .updates {
     width:100%;
   }
 }
