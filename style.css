@@ -125,6 +125,9 @@ footer {
 	float: left;
 	width: 60px;
 }
+.socials:hover .image {
+  opacity: 0.3;
+}
 /* links for updates */
 .updates a:link {
 	color: white;
