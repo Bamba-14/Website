@@ -48,7 +48,6 @@ body {
 	margin-top: 10px;
 	margin-left: 1%;
 	margin-right: 20%;
-	font-weight: normal;
 }
 .image {
 	display: block;
@@ -135,22 +134,18 @@ body {
 .updates a:link {
 	color: white;
 	text-decoration: none;
-	font-weight: bold;
 }
 .updates a:visited {
 	color: white;
 	text-decoration: none;
-	font-weight: bold;
 }
 .updates a:hover {
 	color: #EBECF8;
 	text-decoration: none;
-	font-weight: bold;
 }
 .updates a:active {
 	color: #EBECF8;
 	text-decoration: none;
-	font-weight: bold;
 }
 /* links for mid-text in update */
 .update a:link {
