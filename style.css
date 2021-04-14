@@ -66,7 +66,7 @@ body {
 }
 .titleupdate {
 	color: #52C8EE;
-	margin-left: 35%;
+	margin-left: 33%;
 }
 .row {
 	background-image: radial-gradient(circle at center, white 0, #383738, #383738 100%);
@@ -181,7 +181,7 @@ body {
 	text-align: left;
 	text-align-last: left;
   }
-  .title {
+  .title, .titleupdate {
     width:100%;
     margin-left: 5%;
     margin-right: 5%;
