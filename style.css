@@ -7,6 +7,13 @@ body {
 	color: white;
 	font-family: Consolas,monaco,monospace;
 }
+#container {
+	position: relative;
+	min-height: 100vh;
+}
+#wrap {
+	padding-bottom: 2.5rem;
+}
 
 .logo {
 	display: block;
@@ -83,6 +90,7 @@ footer {
 	display: inline-block;
 	left: 10%;
 	padding-top: 5%
+	height: 2.5rem;
 }
 .rowf {
 	position: fixed;
