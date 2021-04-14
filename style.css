@@ -173,7 +173,7 @@ body {
 	font-weight: bold;
 }
   /* For mobile phones: */
-@media only screen and (max-width:961px) {
+@media only screen and (max-width:620px) {
   .main, .rowf, .updates, .update {
     width:90%;
     margin-left: 3%;
