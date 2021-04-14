@@ -44,10 +44,11 @@ body {
 	margin-right: 20%;
 }
 .list {
-	font-size: 16px;
+	font-size: 17px;
 	margin-top: 10px;
 	margin-left: 1%;
 	margin-right: 20%;
+	color:lightblue;
 }
 .image {
 	display: block;
