@@ -180,10 +180,11 @@ footer {
     width:90%;
     margin-left: 5%;
 	margin-right: 5%;
-	text-justify: inter-word;
+	text-justify: none;
   }
   .title {
     width:100%;
     margin-left: 7%;
+    margin-right: 5%;
   }
 }
