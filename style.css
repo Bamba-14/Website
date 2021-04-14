@@ -85,7 +85,7 @@ body {
 	color: white;
 	font-family: Consolas,monaco,monospace;
 	position: absolute;
-	bottom: 5px;
+	bottom: 10px;
 	font-size: 18px;
 	display: inline-block;
 	left: 10%;
@@ -96,8 +96,8 @@ body {
 	display: inline-block;
 	margin-left: auto;
 	margin-right: auto;
-	float: left;
-	width: 20%;
+	float: right;
+	width: 2%;
 	padding-left: 2%
 }
 .socials:hover .image {
