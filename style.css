@@ -90,7 +90,7 @@ body {
 	display: inline-block;
 	left: 10%;
 	height: 2.5rem;
-	width: 10%;
+	width: 200px;
 }
 .socials
 {
@@ -98,7 +98,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	float: right;
-	width: 5%;
+	width: 40px;
 	padding-left: 2%
 }
 .socials:hover .image {
