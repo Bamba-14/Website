@@ -73,27 +73,6 @@ body {
   clear: both;
   display: table;
 }
-/* links */
-.menu a:link {
-	color: lightblue;
-	text-decoration: none;
-	font-size: 25px;
-}
-.menu a:visited {
-	color: lightblue;
-	text-decoration: none;
-	font-size: 25px;
-}
-.menu a:hover {
-  color: lightgrey;
-  text-decoration: none;
-  font-size: 25px;
-}
-.menu a:active {
-  color: lightblue;
-  text-decoration: none;
-  font-size: 25px;
-}
 footer {
 	background-color: #383738;
 	color: white;
@@ -131,6 +110,33 @@ footer {
 }
 .socials:hover .image {
   opacity: 0.3;
+}
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .rowf, .updates {
+    width:100%;
+  }
+}
+/* links */
+.menu a:link {
+	color: lightblue;
+	text-decoration: none;
+	font-size: 25px;
+}
+.menu a:visited {
+	color: lightblue;
+	text-decoration: none;
+	font-size: 25px;
+}
+.menu a:hover {
+  color: lightgrey;
+  text-decoration: none;
+  font-size: 25px;
+}
+.menu a:active {
+  color: lightblue;
+  text-decoration: none;
+  font-size: 25px;
 }
 /* links for updates */
 .updates a:link {
