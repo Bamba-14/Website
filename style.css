@@ -9,7 +9,7 @@ body {
 }
 #container {
 	position: relative;
-	min-height: 100vh;
+	min-height: 90vh;
 }
 #wrap {
 	padding-bottom: 2.5rem;
