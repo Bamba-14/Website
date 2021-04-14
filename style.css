@@ -64,6 +64,10 @@ body {
 	text-align-last: center;
 	font-size: 18px;
 }
+.titleupdate {
+	color: #52C8EE;
+	margin-left: 35%;
+}
 .row {
 	background-image: radial-gradient(circle at center, white 0, #383738, #383738 100%);
 }
