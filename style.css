@@ -1,6 +1,6 @@
 .title {
 	color: #52C8EE;
-	margin-left: 25%;
+	margin-left: 21%;
 }
 body {
 	background-color: #383738;
@@ -32,9 +32,7 @@ body {
 	margin-top: 10px;
 	margin-left: 20%;
 	margin-right: 20%;
-	text-align: justify;
-	text-justify: inter-word;
-	text-align-last: center;
+	text-align: left;
 	font-size: 18px;
 }
 .updates {
@@ -175,12 +173,10 @@ body {
     width:90%;
     margin-left: 3%;
 	margin-right: 3%;
-	text-align: left;
-	text-align-last: left;
   }
   .title, .titleupdate {
     width:100%;
-    margin-left: 5%;
+    margin-left: 4%;
     margin-right: 5%;
   }
   #footer{
