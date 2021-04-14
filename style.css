@@ -1,6 +1,7 @@
 .title {
 	color: #52C8EE;
 	margin-left: 25%;
+	float: left;
 }
 body {
 	background-color: #383738;
