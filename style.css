@@ -111,14 +111,6 @@ footer {
 .socials:hover .image {
   opacity: 0.3;
 }
-@media only screen and (max-width:620px) {
-  /* For mobile phones: */
-  .main, .rowf, .updates {
-    width:100%;
-    margin-left: 0;
-	margin-right: 0;
-  }
-}
 /* links */
 .menu a:link {
 	color: lightblue;
@@ -181,4 +173,16 @@ footer {
 	color: #EBECF8;
 	text-decoration: none;
 	font-weight: bold;
+}
+  /* For mobile phones: */
+@media only screen and (max-width:620px) {
+  .main, .rowf, .updates {
+    width:100%;
+    margin-left: 0;
+	margin-right: 0;
+  }
+  .title {
+    width:100%;
+    margin-left: 1%;
+  }
 }
