@@ -23,7 +23,8 @@ body {
 }
 .main {
 	margin-top: 10px;
-	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
 	text-align: justify;
 	text-justify: inter-word;
 	text-align-last: center;
@@ -114,6 +115,8 @@ footer {
   /* For mobile phones: */
   .main, .rowf, .updates {
     width:100%;
+    margin-left: 0;
+	margin-right: 0;
   }
 }
 /* links */
