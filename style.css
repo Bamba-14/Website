@@ -125,25 +125,25 @@ body {
   font-size: 25px;
 }
 .menu a:active {
-  color: lightblue;
+  color: lightgrey;
   text-decoration: none;
   font-size: 25px;
 }
 /* links for updates */
 .updates a:link {
-	color: white;
+	color: lightblue;;
 	text-decoration: none;
 }
 .updates a:visited {
-	color: white;
+	color: lightblue;
 	text-decoration: none;
 }
 .updates a:hover {
-	color: #EBECF8;
+	color: lightgrey;
 	text-decoration: none;
 }
 .updates a:active {
-	color: #EBECF8;
+	color: lightgrey;
 	text-decoration: none;
 }
 /* links for mid-text in update */
