@@ -168,7 +168,7 @@ body {
 	font-weight: bold;
 }
   /* For mobile phones: */
-@media only screen and (max-width:620px) {
+@media only screen and (max-width:961px) {
   .main, .rowf, .updates, .update {
     width:90%;
     margin-left: 3%;
@@ -187,6 +187,25 @@ body {
   margin-right: 0;
   margin-left: 30%;
   }
+.anim{
+	width: 100%;
+	float:left;
+	margin-top: 30px;
+	margin-left: 4%;
+    margin-right: 100%;
+}
+.sidebarl{
+	display:none;
+}
+.sidebarr{
+	display:none;
+}
+.imgr{
+	max-width: 100%;
+	min-width: 100%;
+	transition: max-width 1.5s;
+	transition-delay: 0;
+}
 }
  /* Character description */
 .gif{
@@ -216,7 +235,9 @@ body {
 }
 .imgr{
 	max-width: 70%;
+	min-width: 180px;
 	transition: max-width 1.5s;
+	transition-delay: 0;
 }
 .imgr:hover {
 	max-width: 100%;
