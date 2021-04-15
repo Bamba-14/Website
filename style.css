@@ -179,9 +179,6 @@ body {
     margin-left: 4%;
     margin-right: 5%;
   }
-  #footer{
-  	left: 1%;
-  }
   .column {
   float: left;
   width: 49%;
@@ -189,5 +186,97 @@ body {
   margin-bottom: 20%;
   margin-right: 0;
   margin-left: 30%;
+  }
+}
+ /* Character description */
+.sidebarl{
+	width: 39%;
+	height: 240px;
+	float: left;
+	margin-right: 0%;
+	margin-top: 30px;
+}
+.sidebarr{
+	width: 1%;
+	height: 240px;
+	float: right;
+	margin-right: 39%;
+	margin-top: 30px;
+}
+.anim{
+	width: 10%;
+	height: 240px;
+	float:left;
+	margin-left: 0%;
+	margin-top: 30px;
+}
+.imgr{
+	max-width: 70%;
+	transition: max-width 1.5s;
+}
+.imgr:hover {
+	max-width: 100%;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #383738;
+  border-radius: 5px;
+  border: 4px solid #52C8EE;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #52C8EE;
+  font-family: Consolas,monaco,monospace;
+}
+.popup a:link {
+	text-decoration: none;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+.popup .close:hover {
+  color: #52C8EE;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+  font-family: Consolas,monaco,monospace;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
   }
 }
