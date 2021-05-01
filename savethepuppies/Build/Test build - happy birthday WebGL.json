@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Happy Birthday",
+"productVersion": "0.1",
+"dataUrl": "Test build - happy birthday WebGL.data.unityweb",
+"wasmCodeUrl": "Test build - happy birthday WebGL.wasm.code.unityweb",
+"wasmFrameworkUrl": "Test build - happy birthday WebGL.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.6f1"
+}
