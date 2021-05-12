@@ -171,6 +171,27 @@ body {
 	text-decoration: none;
 	font-weight: bold;
 }
+/* links for main */
+.update a:link {
+	color: lightblue;
+	text-decoration: none;
+	font-weight: bold;
+}
+.update a:visited {
+	color: lightblue;
+	text-decoration: none;
+	font-weight: bold;
+}
+.update a:hover {
+	color: #EBECF8;
+	text-decoration: none;
+	font-weight: bold;
+}
+.update a:active {
+	color: #EBECF8;
+	text-decoration: none;
+	font-weight: bold;
+}
   /* For mobile phones: */
 @media only screen and (max-width:961px) {
   .main, .rowf, .updates, .update {
