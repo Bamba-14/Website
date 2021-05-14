@@ -20,6 +20,6 @@ var checkHit = setInterval(function() {
 		gamesBlock.style.animation = "block 1s infinite linear";
 		}else{
 			counter++;
-			document.getElementById("scoreSpan").innerHTML = Math.floor(counter/100);
+			document.getElementById("scoreSpan").innerAdjacentHTML = Math.floor(counter/100);
 		}
 }, 10);
