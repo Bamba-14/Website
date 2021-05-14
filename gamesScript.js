@@ -7,7 +7,7 @@ function gamesJump()
 	gamesPlayer.classList.add("animate");
 	setInterval(function() {
 		games.gamesPlayer.classList.remove("animate");
-	}, 500);
+	}, 1);
 }
 
 var checkHit = setInterval(function() {
