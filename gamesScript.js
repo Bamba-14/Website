@@ -5,7 +5,7 @@ function gamesJump()
 {
 	if(gamesPlayer.classList == "animate"){return}
 	gamesPlayer.classList.add("animate");
-	setTimeout(function() {
+	setInterval(function() {
 		games.gamesPlayer.classList.remove("animate");
 	}, 500);
 }
