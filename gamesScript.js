@@ -15,11 +15,11 @@ var checkHit = setInterval(function() {
 	let gamesBlockLeft = parseInt(window.getComputedStyle(gamesBlock).getPropertyValue("left"));
 	if(gamesBlockLeft<20 && gamesBlockLeft>-20 && gamesPlayerTop >=130) {
 		gamesBlock.style.animation ="none";
-		alert("Game Over. score: "+Math.floor(counter/100));
+		//alert("Game Over. score: "+Math.floor(counter/100));
 		counter=0;
 		gamesBlock.style.animation = "block 1s infinite linear";
 		}else{
 			counter++;
-			document.getElementById("scoreSpan").innerAdjacentHTML = Math.floor(counter/100);
+			//document.getElementById("scoreSpan").innerAdjacentHTML = Math.floor(counter/100);
 		}
 }, 10);
