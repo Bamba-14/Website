@@ -1,21 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Save the Pets</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.javascript"></script>
+    <title>Unity WebGL Player | Save the Pets</title>
     <script src="Build/UnityLoader.js"></script>
     <script>
-        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Save the Pets responsive WebGL2.json", {onProgress: UnityProgress});
+      UnityLoader.instantiate("unityContainer", "Build/Save the Pets v1.0 WebGL.json");
     </script>
-</head>
-<body>
-<div class="webgl-content">
-    <div id="gameContainer" style="width: 495px; height: 881px"></div>
-</div>
-<script src="TemplateData/responsive.javascript"></script>
-</body>
+  </head>
+  <body>
+    <div id="unityContainer" style="width: 750px; height: 1334px; margin: auto"></div>
+  </body>
 </html>
