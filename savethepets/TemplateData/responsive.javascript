@@ -7,8 +7,8 @@
     const gameContainer = q('#gameContainer');
 
     const initialDimensions = {width: parseInt(gameContainer.style.width, 10), height: parseInt(gameContainer.style.height, 10)};
-    gameContainer.style.width = '78%';
-    gameContainer.style.height = '100%';
+    gameContainer.style.width = '515px';
+    gameContainer.style.height = '901px';
 
     let gCanvasElement = null;
 
