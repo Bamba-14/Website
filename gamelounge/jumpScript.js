@@ -13,7 +13,7 @@ var checkHit = setInterval(function() {
     let jumpObstacle1Left = parseInt(window.getComputedStyle(jumpObstacle1).getPropertyValue("left"));
     if(jumpObstacle1Left<20 && jumpObstacle1Left>-20 && jumpPlayerTop>=130){
         jumpObstacle1.style.animation = "none";
-        alert("Game Over. score: "+Math.floor(counter/100));
+        //alert("Game Over. score: "+Math.floor(counter/100));
         counter=0;
         jumpObstacle1.style.animation = "jumpObstacle1 1s infinite linear";
     }else{
