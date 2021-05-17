@@ -57,7 +57,7 @@ p{
 
 #jumpGame p{
     width: 520px;
-    height: 300px;
+    top: -50px;
     margin: auto;
 }
 .button {
