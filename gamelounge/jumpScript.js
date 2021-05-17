@@ -1,21 +1,21 @@
-var character = document.getElementById("character");
-var block = document.getElementById("block");
+var jumpPlayer = document.getElementById("jumpPlayer");
+var jumpObstacle1 = document.getElementById("jumpObstacle1");
 var counter=0;
 function jump(){
-    if(character.classList == "animate"){return}
-    character.classList.add("animate");
+    if(jumpPlayer.classList == "animate"){return}
+    jumpPlayer.classList.add("animate");
     setTimeout(function(){
-        character.classList.remove("animate");
+        jumpPlayer.classList.remove("animate");
     },300);
 }
-var checkDead = setInterval(function() {
-    let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
-    let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
-    if(blockLeft<20 && blockLeft>-20 && characterTop>=130){
-        block.style.animation = "none";
+var checkHit = setInterval(function() {
+    let jumpPlayerTop = parseInt(window.getComputedStyle(jumpPlayer).getPropertyValue("top"));
+    let jumpObstacle1Left = parseInt(window.getComputedStyle(jumpObstacle1).getPropertyValue("left"));
+    if(jumpObstacle1Left<20 && jumpObstacle1Left>-20 && jumpPlayerTop>=130){
+        jumpObstacle1.style.animation = "none";
         alert("Game Over. score: "+Math.floor(counter/100));
         counter=0;
-        block.style.animation = "block 1s infinite linear";
+        jumpObstacle1.style.animation = "jumpObstacle1 1s infinite linear";
     }else{
         counter++;
         document.getElementById("scoreSpan").innerHTML = Math.floor(counter/100);
