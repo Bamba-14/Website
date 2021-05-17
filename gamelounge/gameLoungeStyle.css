@@ -3,6 +3,11 @@
     margin: 0;
     overflow-x: hidden;
 }
+.jumpGame{
+    width: 500px;
+    height: 400px;
+    margin: auto;
+}
 .game{
     width: 500px;
     height: 200px;
@@ -46,8 +51,8 @@ p{
 
 #gameControls{
     position: relative;
-    top: 230px;
-    left: 500px;
+    top: 100px;
+    left: 250px;
 }
 
 .button {
