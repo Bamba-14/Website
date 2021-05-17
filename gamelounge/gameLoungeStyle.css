@@ -35,6 +35,7 @@
     left: 500px;
     animation: jumpObstacle1 1s infinite linear;
 }
+
 @keyframes jumpObstacle1{
     0%{left: 500px}
     100%{left: -20px}
@@ -42,6 +43,13 @@
 p{
     text-align: center;
 }
+
+#gameControls{
+    position: relative;
+    top: 130px;
+    left: 500px;
+}
+
 .button {
   background-color: #52C8EE;
   border: none;
