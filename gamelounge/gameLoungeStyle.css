@@ -9,7 +9,7 @@
     border: 1px solid black;
     margin: auto;
 }
-#character{
+#jumpPlayer{
     width: 20px;
     height: 50px;
     background-color: red;
@@ -26,16 +26,16 @@
     100%{top: 150px;}
 }
 
-#block{
+#jumpObstacle1{
     background-color: blue;
     width: 20px;
     height: 20px;
     position: relative;
     top: 130px;
     left: 500px;
-    animation: block 1s infinite linear;
+    animation: jumpObstacle1 1s infinite linear;
 }
-@keyframes block{
+@keyframes jumpObstacle1{
     0%{left: 500px}
     100%{left: -20px}
 }
