@@ -5,7 +5,7 @@
 }
 .jumpGame{
     width: 520px;
-    height: 400px;
+    height: 300px;
     margin: auto;
 }
 .game{
@@ -21,7 +21,7 @@
     position:relative;
     top: 150px;
 }
-.animate{
+.animatePlayer{
     animation: jump 0.3s linear;
 }
 @keyframes jump{
@@ -38,6 +38,8 @@
     position: relative;
     top: 130px;
     left: 500px;
+}
+.animateObstacle1{
     animation: jumpObstacle1 1s infinite linear;
 }
 
@@ -51,14 +53,27 @@ p{
 
 #gameControls{
     position: relative;
-    top: 100px;
-    left: 250px;
+    top: 0px;
+    left: 0px;
 }
 
-#jumpGame p{
-    top: -50px;
+#score{
+    top: 0px;
     margin: auto;
     text-align: center;
+}
+
+#finalScore{
+    top: 0px;
+    margin: auto;
+    text-align: center;
+}
+
+.inactiveScore{
+	color:white;
+}
+.inactiveFinalScore{
+	color:white;
 }
 .button {
   background-color: #52C8EE;
@@ -69,6 +84,5 @@ p{
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
   cursor: pointer;
 }
