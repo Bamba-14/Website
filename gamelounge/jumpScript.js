@@ -41,7 +41,7 @@ function score(){
 	        //jumpObstacle1.style.animation = "jumpObstacle1 1s infinite linear";
 	    }else{
 			counter++;
-	    	document.getElementById("scoreSpan").innerHTML = Math.floor(counter/100);
+	    	document.getElementById("currentScoreSpan").innerHTML = Math.floor(counter/100);
 	    }
 	}, 10);
 }
@@ -51,8 +51,8 @@ function stop(endCounter){
 	document.getElementById("finalScoreSpan").innerHTML = Math.floor(endCounter/100);
 	finalScoreSpan.classList.remove("inactiveFinalScore");
 	finalScore.classList.remove("inactiveFinalScore");
-	scoreSpan.classList.add("inactiveScore");
-	score.classList.add("inactiveScore");
+	currentScoreSpan.classList.add("inactiveCurrentScore");
+	currentScore.classList.add("inactiveCurrentScore");
 }
 
 //Game restart
@@ -60,6 +60,6 @@ function restart(){
 	counter=0;
 	finalScoreSpan.classList.add("inactiveFinalScore");
 	finalScore.classList.add("inactiveFinalScore");
-	scoreSpan.classList.remove("inactiveScore");
-	score.classList.remove("inactiveScore");
+	currentScoreSpan.classList.remove("inactiveCurrentScore");
+	currentScore.classList.remove("inactiveCurrentScore");
 }

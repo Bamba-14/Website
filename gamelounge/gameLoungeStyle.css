@@ -57,7 +57,7 @@ p{
     left: 0px;
 }
 
-#score{
+#currentScore{
     top: 0px;
     margin: auto;
     text-align: center;
@@ -69,7 +69,7 @@ p{
     text-align: center;
 }
 
-.inactiveScore{
+.inactiveCurrentScore{
 	color:white;
 }
 .inactiveFinalScore{
