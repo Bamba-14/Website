@@ -4,7 +4,7 @@
     overflow-x: hidden;
 }
 .jumpGame{
-    width: 500px;
+    width: 520px;
     height: 400px;
     margin: auto;
 }
@@ -55,6 +55,11 @@ p{
     left: 250px;
 }
 
+#jumpGame .p{
+    width: 520px;
+    height: 300px;
+    margin: auto;
+}
 .button {
   background-color: #52C8EE;
   border: none;
