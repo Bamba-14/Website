@@ -1,0 +1,35 @@
+ /* Simple game in Games page */
+ #game{
+ 	width: 30vw;
+ 	height: 200px;
+ 	border: 1px solid black;
+ }
+ #gamesPlayer{
+ 	width: 20px;
+ 	height: 50px;
+ 	background-color: red;
+ 	position: relative;
+ 	top: 150px;
+ }
+  #gamesBlock{
+ 	width: 20px;
+ 	height: 20px;
+ 	background-color: blue;
+ 	position: relative;
+ 	top: 130px;
+ 	left: 500px;
+ 	animation: gamesBlock 1s infinite linear;
+ }
+ @keyframes gamesBlock{
+ 	0%{left:480px;}
+ 	100%{left:-40px;}
+ }
+ @keyframes gamesJump{
+ 	0%{top:150px;}
+ 	30%{top:100px;}
+ 	70%{top:100px;}
+ 	100%{top:150px;}
+ }
+ .animate{
+ 	animation: gamesJump 500ms;
+ }
