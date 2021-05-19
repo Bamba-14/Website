@@ -6,21 +6,6 @@ var fs = require("fs");
 //Set final score invisible at start of the game
 finalScore.classList.add("inactiveFinalScore");
 
-var txtFile = new XMLHttpRequest();  
-txtFile.open("GET", gamelounge/jumpleaderboard.txt", true);  
-txtFile.onreadystatechange = function()   
-{  
-  if (txtFile.readyState === 4)   
-  {  
-       // Makes sure the document is ready to parse.  
-       if (txtFile.status === 200)   
-       {  
-            // Makes sure it's found the file.  
-            document.getElementById("div").innerHTML = txtFile.responseText;  
-       }  
-  }  
-}  
-txtFile.send(null)
 
 //document.getElementById("firstPlace").innerHTML = console.log(buf.toString());
 
