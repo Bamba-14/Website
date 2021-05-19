@@ -2,12 +2,8 @@
 var jumpPlayer = document.getElementById("jumpPlayer");
 var jumpObstacle1 = document.getElementById("jumpObstacle1");
 var counter=0;
-var fs = require("fs");
 //Set final score invisible at start of the game
 finalScore.classList.add("inactiveFinalScore");
-
-
-//document.getElementById("firstPlace").innerHTML = console.log(buf.toString());
 
 //Function for player jump
 function jump(){
