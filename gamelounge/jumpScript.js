@@ -4,11 +4,23 @@ var jumpObstacle1 = document.getElementById("jumpObstacle1");
 var counter=0;
 var fs = require("fs");
 //Set final score invisible at start of the game
-fs.readFile("jumpleaderboard.txt", function(err, buf) {
-  console.log(buf.toString());
-});
 finalScore.classList.add("inactiveFinalScore");
-document.getElementById("firstPlace").innerHTML = "1";
+
+var txtFile = new XMLHttpRequest();
+txtFile.open("GET", "/jumpleaderboard.txt", true);
+txtFile.onreadystatechange = function() {
+  if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
+    if (txtFile.status === 200) {  // Makes sure it's found the file.
+      allText = txtFile.responseText; 
+      //lines = txtFile.responseText.split("\n"); // Will separate each line into an array
+      var customTextElement = document.getElementById('firstPlace');
+customTextElement.innerHTML = txtFile.responseText;
+    }
+  }
+}
+txtFile.send(null);
+
+//document.getElementById("firstPlace").innerHTML = console.log(buf.toString());
 
 //Function for player jump
 function jump(){
