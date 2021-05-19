@@ -7,7 +7,7 @@ var fs = require("fs");
 finalScore.classList.add("inactiveFinalScore");
 
 var txtFile = new XMLHttpRequest();  
-txtFile.open("GET", "https://github.com/Bamba-14/Website/blob/39f89676d7c891e1957f573f6e567bb33c1bd313/gamelounge/jumpleaderboard.txt", true);  
+txtFile.open("GET", gamelounge/jumpleaderboard.txt", true);  
 txtFile.onreadystatechange = function()   
 {  
   if (txtFile.readyState === 4)   
