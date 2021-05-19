@@ -6,19 +6,21 @@ var fs = require("fs");
 //Set final score invisible at start of the game
 finalScore.classList.add("inactiveFinalScore");
 
-var txtFile = new XMLHttpRequest();
-txtFile.open("GET", "/jumpleaderboard.txt", true);
-txtFile.onreadystatechange = function() {
-  if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
-    if (txtFile.status === 200) {  // Makes sure it's found the file.
-      allText = txtFile.responseText; 
-      //lines = txtFile.responseText.split("\n"); // Will separate each line into an array
-      var customTextElement = document.getElementById('firstPlace');
-customTextElement.innerHTML = txtFile.responseText;
-    }
-  }
-}
-txtFile.send(null);
+var txtFile = new XMLHttpRequest();  
+txtFile.open("GET", "https://github.com/Bamba-14/Website/blob/39f89676d7c891e1957f573f6e567bb33c1bd313/gamelounge/jumpleaderboard.txt", true);  
+txtFile.onreadystatechange = function()   
+{  
+  if (txtFile.readyState === 4)   
+  {  
+       // Makes sure the document is ready to parse.  
+       if (txtFile.status === 200)   
+       {  
+            // Makes sure it's found the file.  
+            document.getElementById("div").innerHTML = txtFile.responseText;  
+       }  
+  }  
+}  
+txtFile.send(null)
 
 //document.getElementById("firstPlace").innerHTML = console.log(buf.toString());
 
