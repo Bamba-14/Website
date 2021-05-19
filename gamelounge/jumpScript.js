@@ -2,8 +2,13 @@
 var jumpPlayer = document.getElementById("jumpPlayer");
 var jumpObstacle1 = document.getElementById("jumpObstacle1");
 var counter=0;
+var fs = require("fs");
 //Set final score invisible at start of the game
+fs.readFile("jumpleaderboard.txt", function(err, buf) {
+  console.log(buf.toString());
+});
 finalScore.classList.add("inactiveFinalScore");
+document.getElementById("firstPlace").innerHTML = "1";
 
 //Function for player jump
 function jump(){
