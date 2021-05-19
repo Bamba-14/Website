@@ -11,6 +11,14 @@
             <div id="jumpPlayer"></div>
             <div id="jumpObstacle1"></div>
         </div>
+        <div id="leaderboard">
+            <h2>Leaderboard</h2>
+            <ol>
+                <li>1st place: <span id="firstPlace"></span></li>
+                <li>2nd place: <span id="secondPlace"></span></li>
+                <li>3rd place: <span id="thirdPlace"></span></li>
+            <iframe id="jumpLeaderboard" src="jumpleaderboard.txt" onload="LoadFile();" style="display: none;"></iframe>
+        </div>
         <div id="gameControls">
             <div id="currentScore">
                 <p>Score: <span id="currentScoreSpan"></span></p>
