@@ -2,33 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+            <meta name="description" content="2D RPG game">
+            <meta name="author" content="">
+            <link rel="icon" type="image/png" href="./images/logo.png"/>
+            <link rel="stylesheet" href="./style.css">
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-49E46GXHL0"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-49E46GXHL0');
+            </script>
     <title>Jump Game</title>
     <link rel="stylesheet" href="gameLoungeStyle.css">
 </head>
-<body>
-    <div class="jumpGame">
-        <div class="game">
-            <div id="jumpPlayer"></div>
-            <div id="jumpObstacle1"></div>
-        </div>
-        <div id="leaderboard">
-            <h2>Leaderboard</h2>
-            <ol>
-                <li>1st place: <span id="firstPlace"></span></li>
-                <li>2nd place: <span id="secondPlace"></span></li>
-                <li>3rd place: <span id="thirdPlace"></span></li>
-        </div>
-        <div id="gameControls">
-            <div id="currentScore">
-                <p>Score: <span id="currentScoreSpan"></span></p>
+    <div id="container">
+        </head>
+        <section id="home">
+            <div class="logo">
+                <a href="index.html"><img class="logo" src="./images/Logo-animation.gif"></a>
             </div>
-            <div id="finalScore">
-                <p>Final score: <span id="finalScoreSpan"></span></p>
+            <div class="menu">
+                <a class="menu" href="index.html">Home</a>
+                <b>|</b>
+                <a class="menu" href="updates.html">Updates</a>
+                <b>|</b>
+                <a class="menu" href="bodyframe.html">BodyFrame</a>
+                        <b>|</b>
+                <a class="menu" href="games.html">Games</a>
             </div>
-            <button class="button" onclick="start()">Start</button>
-            <button class="button" onclick="jump()">Jump</button>
+    <body>
+        <div id="wrap">
+            <div class="jumpGame">
+                <div class="game">
+                    <div id="jumpPlayer"></div>
+                    <div id="jumpObstacle1"></div>
+                </div>
+                <div id="gameControls">
+                    <div id="currentScore">
+                        <p>Score: <span id="currentScoreSpan"></span></p>
+                    </div>
+                    <div id="finalScore">
+                        <p>Final score: <span id="finalScoreSpan"></span></p>
+                    </div>
+                    <button class="button" onclick="start()">Start</button>
+                    <button class="button" onclick="jump()">Jump</button>
+                </div>
+            </div>
         </div>
     </div>
+    <footer id="footer">
+            <b>Socials:</b>
+            <a class="socials" href="https://www.youtube.com/channel/UCi7eHWvpB9wFnbNONZ4L64g"target="_blank"><img class="image" src="./images/youtube-icon.png" style="width:100%"></a>
+            <a class="socials" href="mailto:buckyside@gmail.com"><img class="image" src="./images/mail-icon.png" style="width:100%"></a>
+            <a class="socials" href="https://twitter.com/SideBucky"><img class="image" src="./images/twitter-icon.png" style="width:100%"></a>
+        </footer>
 </body>
 <script src="jumpScript.js"></script>
 </html>
