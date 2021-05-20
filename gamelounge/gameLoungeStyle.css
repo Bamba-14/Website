@@ -3,8 +3,13 @@
     margin: 0;
     overflow-x: hidden;
 }
+body {
+	background-color: #383738;
+	color: white;
+	font-family: Consolas,monaco,monospace;
+}
 .jumpGame{
-    width: 700px;
+    width: 502px;
     height: 300px;
     margin: auto;
 }
@@ -14,14 +19,6 @@
     border: 1px solid black;
     margin: auto;
     float: left;
-}
-.leaderboard{
-    width: 200px;
-    height: 200px;
-    border: 1px solid red;
-    margin: auto;
-    float: right;
-    padding-top: 500px;
 }
 #jumpPlayer{
     width: 20px;
@@ -47,6 +44,7 @@
     position: relative;
     top: 130px;
     left: 500px;
+    box-shadow: 0px 14px 34px 2px #52C8EE;
 }
 .animateObstacle1{
     animation: jumpObstacle1 1s infinite linear;
