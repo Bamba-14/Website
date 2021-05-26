@@ -2,12 +2,13 @@
 var jumpPlayer = document.getElementById("jumpPlayer");
 var jumpObstacle1 = document.getElementById("jumpObstacle1");
 var counter=0;
+var boolStart=false;
 //Set final score invisible at start of the game
 finalScore.classList.add("inactiveFinalScore");
 
 //Function for player jump
 function jump(){
-    if(jumpPlayer.classList == "animate"){return}
+    if(jumpPlayer.classList == "animate"){return};
     //add animation to player
     jumpPlayer.classList.add("animatePlayer");
     setTimeout(function(){
@@ -17,38 +18,42 @@ function jump(){
 
 //Function for obstacle1 to move (game start)
 function start(){
+	document.getElementById("currentScoreSpan").innerHTML = counter;
     if(jumpObstacle1.classList == "animate"){return}
-    //add animation to player and start keeping score
-    jumpObstacle1.classList.add("animateObstacle1");
-    if(counter == 0){
-    	score();
+    //add animation ¸for the obstacle and start keeping score
+    jumpObstacle1.style.animation = "jumpObstacleAnimation1 2s infinite linear";
+    if(boolStart == 0){
+    	jumpObstacle1.addEventListener("animationiteration", scoreTrack);
+    	boolStart=true;
+    	gameOver();
     }else{
     	restart();
     }
     
 }
 
-//Check if game over
-function score(){
+//Update score keep score
+function scoreTrack(){
+	random_bg_color();
+	counter++;
+	document.getElementById("currentScoreSpan").innerHTML = counter;
+}
+
+function gameOver(){
 	var checkHit = setInterval(function() {
 	    let jumpPlayerTop = parseInt(window.getComputedStyle(jumpPlayer).getPropertyValue("top"));
 	    let jumpObstacle1Left = parseInt(window.getComputedStyle(jumpObstacle1).getPropertyValue("left"));
-	    if(jumpObstacle1Left<20 && jumpObstacle1Left>-20 && jumpPlayerTop>=130){
-	        jumpObstacle1.classList.remove("animateObstacle1");
-	        //alert("Game Over. score: "+Math.floor(counter/100));
+	    if(jumpObstacle1Left<50 && jumpObstacle1Left>-20 && jumpPlayerTop>=130){
+	        jumpObstacle1.style.animation = "paused";
 	        endCounter=counter;
 	        stop(endCounter);
-	        //jumpObstacle1.style.animation = "jumpObstacle1 1s infinite linear";
-	    }else{
-			counter++;
-	    	document.getElementById("currentScoreSpan").innerHTML = Math.floor(counter/100);
 	    }
-	}, 10);
+	}, 1);
 }
 
 //Game over, show final score
 function stop(endCounter){
-	document.getElementById("finalScoreSpan").innerHTML = Math.floor(endCounter/100);
+	document.getElementById("finalScoreSpan").innerHTML = endCounter;
 	finalScoreSpan.classList.remove("inactiveFinalScore");
 	finalScore.classList.remove("inactiveFinalScore");
 	currentScoreSpan.classList.add("inactiveCurrentScore");
@@ -58,8 +63,19 @@ function stop(endCounter){
 //Game restart
 function restart(){
 	counter=0;
+	document.getElementById("currentScoreSpan").innerHTML = counter;
 	finalScoreSpan.classList.add("inactiveFinalScore");
 	finalScore.classList.add("inactiveFinalScore");
 	currentScoreSpan.classList.remove("inactiveCurrentScore");
 	currentScore.classList.remove("inactiveCurrentScore");
+	jumpObstacle1.style.animation = "jumpObstacleAnimation1 2s infinite linear";
 }
+
+function random_bg_color() {
+    var x = Math.floor(Math.random() * 256);
+    var y = Math.floor(Math.random() * 256);
+    var z = Math.floor(Math.random() * 256);
+    var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+    jumpObstacle1.style.backgroundColor = bgColor;
+    document.documentElement.style.setProperty('--jumpObstacle1-box-shadow-color', bgColor);
+    }

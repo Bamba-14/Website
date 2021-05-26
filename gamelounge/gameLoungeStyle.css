@@ -3,29 +3,34 @@
     margin: 0;
     overflow-x: hidden;
 }
+:root {
+	--jumpObstacle1-box-shadow-color:#52C8EE;
+}
 body {
 	background-color: #383738;
 	color: white;
 	font-family: Consolas,monaco,monospace;
 }
 .jumpGame{
-    width: 502px;
-    height: 300px;
+    /*width: 500px;*/
+    width: 1000px;
+    height: 305px;
     margin: auto;
 }
 .game{
-    width: 500px;
+    /*width: 500px;*/
+    width: 1000px;
     height: 200px;
-    border: 1px solid black;
     margin: auto;
     float: left;
 }
 #jumpPlayer{
-    width: 20px;
+    width: 50px;
     height: 50px;
-    background-color: red;
+    background-color: white;
     position:relative;
     top: 150px;
+    border-radius: 50%;
 }
 .animatePlayer{
     animation: jump 0.3s linear;
@@ -38,30 +43,28 @@ body {
 }
 
 #jumpObstacle1{
-    background-color: blue;
+    background-color: #52C8EE;
     width: 20px;
     height: 20px;
     position: relative;
     top: 130px;
-    left: 500px;
-    box-shadow: 0px 14px 34px 2px #52C8EE;
-}
-.animateObstacle1{
-    animation: jumpObstacle1 1s infinite linear;
+    left: 1000px;
+    box-shadow: 0px 14px 64px 20px var(--jumpObstacle1-box-shadow-color);
 }
 
-@keyframes jumpObstacle1{
-    0%{left: 500px}
-    100%{left: -20px}
+@keyframes jumpObstacleAnimation1{
+    0%{left: 1000px;}
+    100%{left: -20px;}
 }
+
 p{
     text-align: center;
 }
 
 #gameControls{
     position: relative;
-    float:left;
-    width: 700px;
+    float:center;
+    width: 1000px;
     height: 98px;
     margin: auto;
 }
