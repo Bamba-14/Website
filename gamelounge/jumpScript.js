@@ -1,6 +1,7 @@
 //Fill variables
 var jumpPlayer = document.getElementById("jumpPlayer");
 var jumpObstacle1 = document.getElementById("jumpObstacle1");
+var jumpObstacle2 = document.getElementById("jumpObstacle2");
 var counter=0;
 var boolStart=false;
 //Set final score invisible at start of the game
@@ -22,6 +23,7 @@ function start(){
     if(jumpObstacle1.classList == "animate"){return}
     //add animation ¸for the obstacle and start keeping score
     jumpObstacle1.style.animation = "jumpObstacleAnimation1 2s infinite linear";
+    jumpObstacle2.style.animation = "jumpObstacleAnimation1 4s infinite linear";
     if(boolStart == 0){
     	jumpObstacle1.addEventListener("animationiteration", scoreTrack);
     	boolStart=true;
@@ -29,7 +31,6 @@ function start(){
     }else{
     	restart();
     }
-    
 }
 
 //Update score keep score
