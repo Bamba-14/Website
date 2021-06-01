@@ -23,9 +23,10 @@ function start(){
     if(jumpObstacle1.classList == "animate"){return}
     //add animation ¸for the obstacle and start keeping score
     jumpObstacle1.style.animation = "jumpObstacleAnimation1 2s infinite linear";
-    jumpObstacle2.style.animation = "jumpObstacleAnimation1 4s infinite linear";
+    jumpObstacle2.style.animation = "jumpObstacleAnimation1 5s infinite linear";
     if(boolStart == 0){
     	jumpObstacle1.addEventListener("animationiteration", scoreTrack);
+    	jumpObstacle2.addEventListener("animationiteration", scoreTrack);
     	boolStart=true;
     	gameOver();
     }else{
@@ -44,7 +45,15 @@ function gameOver(){
 	var checkHit = setInterval(function() {
 	    let jumpPlayerTop = parseInt(window.getComputedStyle(jumpPlayer).getPropertyValue("top"));
 	    let jumpObstacle1Left = parseInt(window.getComputedStyle(jumpObstacle1).getPropertyValue("left"));
-	    if(jumpObstacle1Left<50 && jumpObstacle1Left>-20 && jumpPlayerTop>=130){
+	    let jumpObstacle2Left = parseInt(window.getComputedStyle(jumpObstacle2).getPropertyValue("left"));
+	    if(jumpObstacle1Left<50 && jumpObstacle1Left>-20 && jumpPlayerTop>=30){
+	        jumpObstacle1.style.animation = "paused";
+	        jumpObstacle2.style.animation = "paused";
+	        endCounter=counter;
+	        stop(endCounter);
+	    }
+	    if(jumpObstacle2Left<50 && jumpObstacle2Left>-20 && jumpPlayerTop>=30){
+	        jumpObstacle2.style.animation = "paused";
 	        jumpObstacle1.style.animation = "paused";
 	        endCounter=counter;
 	        stop(endCounter);
