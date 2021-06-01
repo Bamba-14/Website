@@ -1,119 +1,91 @@
-*{
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden;
-}
-:root {
-	--jumpObstacle1-box-shadow-color:#52C8EE;
-}
-body {
-	background-color: #383738;
-	color: white;
-	font-family: Consolas,monaco,monospace;
-}
-.jumpGame{
-    /*width: 500px;*/
-    width: 1000px;
-    height: 305px;
-    margin: auto;
-}
-.game{
-    /*width: 500px;*/
-    width: 1000px;
-    height: 200px;
-    margin: auto;
-    float: left;
-}
-#jumpPlayer{
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    position:relative;
-    top: 150px;
-    border-radius: 50%;
-    box-shadow: inset 0 0 18px #fff, 
-        inset 6px 0 18px #fff, 
-        inset -6px 0 18px #52C8EE, 
-        inset 6px 0 30px #fff, 
-        inset -6px 0 30px #0ff;
-}
-.animatePlayer{
-    animation: jump 0.3s linear;
-}
-@keyframes jump{
-    0%{top: 150px;}
-    30%{top: 100px;}
-    70%{top: 100px;}
-    100%{top: 150px;}
+//Fill variables
+var jumpPlayer = document.getElementById("jumpPlayer");
+var jumpObstacle1 = document.getElementById("jumpObstacle1");
+var jumpObstacle2 = document.getElementById("jumpObstacle2");
+var counter=0;
+var boolStart=false;
+//Set final score invisible at start of the game
+finalScore.classList.add("inactiveFinalScore");
+
+//Function for player jump
+function jump(){
+    if(jumpPlayer.classList == "animate"){return};
+    //add animation to player
+    jumpPlayer.classList.add("animatePlayer");
+    setTimeout(function(){
+        jumpPlayer.classList.remove("animatePlayer");
+    },300);
 }
 
-#jumpObstacle1{
-    background-color: #52C8EE;
-    width: 20px;
-    height: 20px;
-    position: relative;
-    top: 130px;
-    left: 1000px;
-    box-shadow: 0px 14px 64px 20px var(--jumpObstacle1-box-shadow-color);
+//Function for obstacle1 to move (game start)
+function start(){
+	document.getElementById("currentScoreSpan").innerHTML = counter;
+    if(jumpObstacle1.classList == "animate"){return}
+    //add animation ¸for the obstacle and start keeping score
+    jumpObstacle1.style.animation = "jumpObstacleAnimation1 2s infinite linear";
+    jumpObstacle2.style.animation = "jumpObstacleAnimation1 5s infinite linear";
+    if(boolStart == 0){
+    	jumpObstacle1.addEventListener("animationiteration", scoreTrack);
+    	jumpObstacle2.addEventListener("animationiteration", scoreTrack);
+    	boolStart=true;
+    	gameOver();
+    }else{
+    	restart();
+    }
 }
 
-@keyframes jumpObstacleAnimation1{
-    0%{left: 1000px;}
-    100%{left: -20px;}
+//Update score keep score
+function scoreTrack(){
+	random_bg_color();
+	counter++;
+	document.getElementById("currentScoreSpan").innerHTML = counter;
 }
 
-#jumpObstacle2{
-    background-color: #52C8EE;
-    width: 10px;
-    height: 10px;
-    position: relative;
-    top: 120px;
-    left: 1020px;
-    box-shadow: 0px 14px 64px 20px var(--jumpObstacle1-box-shadow-color);
+function gameOver(){
+	var checkHit = setInterval(function() {
+	    let jumpPlayerTop = parseInt(window.getComputedStyle(jumpPlayer).getPropertyValue("top"));
+	    let jumpObstacle1Left = parseInt(window.getComputedStyle(jumpObstacle1).getPropertyValue("left"));
+	    let jumpObstacle2Left = parseInt(window.getComputedStyle(jumpObstacle2).getPropertyValue("left"));
+	    if(jumpObstacle1Left<50 && jumpObstacle1Left>-20 && jumpPlayerTop>=30){
+	        jumpObstacle1.style.animation = "paused";
+	        jumpObstacle2.style.animation = "paused";
+	        endCounter=counter;
+	        stop(endCounter);
+	    }
+	    if(jumpObstacle2Left<50 && jumpObstacle2Left>-20 && jumpPlayerTop>=30){
+	        jumpObstacle2.style.animation = "paused";
+	        jumpObstacle1.style.animation = "paused";
+	        endCounter=counter;
+	        stop(endCounter);
+	    }
+	}, 1);
 }
 
-@keyframes jumpObstacleAnimation2{
-    0%{left: 2000px;}
-    100%{left: -20px;}
-}
-p{
-    text-align: center;
-}
-
-#gameControls{
-    position: relative;
-    float:center;
-    width: 1000px;
-    height: 98px;
-    margin: auto;
+//Game over, show final score
+function stop(endCounter){
+	document.getElementById("finalScoreSpan").innerHTML = endCounter;
+	finalScoreSpan.classList.remove("inactiveFinalScore");
+	finalScore.classList.remove("inactiveFinalScore");
+	currentScoreSpan.classList.add("inactiveCurrentScore");
+	currentScore.classList.add("inactiveCurrentScore");
 }
 
-#currentScore{
-    top: 0px;
-    margin: auto;
-    text-align: center;
+//Game restart
+function restart(){
+	counter=0;
+	document.getElementById("currentScoreSpan").innerHTML = counter;
+	finalScoreSpan.classList.add("inactiveFinalScore");
+	finalScore.classList.add("inactiveFinalScore");
+	currentScoreSpan.classList.remove("inactiveCurrentScore");
+	currentScore.classList.remove("inactiveCurrentScore");
+	jumpObstacle1.style.animation = "jumpObstacleAnimation1 2s infinite linear";
 }
 
-#finalScore{
-    top: 0px;
-    margin: auto;
-    text-align: center;
-}
-
-.inactiveCurrentScore{
-	color:#383738;
-}
-.inactiveFinalScore{
-	color:#383738;
-}
-.button {
-  background-color: #52C8EE;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-}
+function random_bg_color() {
+    var x = Math.floor(Math.random() * 256);
+    var y = Math.floor(Math.random() * 256);
+    var z = Math.floor(Math.random() * 256);
+    var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+    jumpObstacle1.style.backgroundColor = bgColor;
+    document.documentElement.style.setProperty('--jumpObstacle1-box-shadow-color', bgColor);
+    }
