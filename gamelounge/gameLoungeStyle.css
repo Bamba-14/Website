@@ -16,6 +16,31 @@ body {
     height: 305px;
     margin: auto;
 }
+.jumpGame{
+    width: 1000px;
+    height: 405px;
+    margin: auto;
+}
+#jumpGameTitle{
+    height: 25px;
+    font-size: 20px;
+    font-style: bold;
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+}
+.startJumpGameTitle{
+    color: transparent;
+}
+.animateStartText{
+    color: white;
+    animation: typing 3.5s steps(144, end);
+}
+@keyframes typing{
+    from { width: 0 }
+    to { width: 100% }
+}
 .game{
     width: 1000px;
     height: 200px;
