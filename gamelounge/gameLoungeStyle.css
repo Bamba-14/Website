@@ -179,6 +179,7 @@ p{
     width: 1000px;
     height: 98px;
     margin: auto;
+    overflow: hidden;
 }
 
 #currentScore{
@@ -198,6 +199,24 @@ p{
 }
 .inactiveFinalScore{
 	color:#383738;
+}
+#sessionHighScore{
+    top: 0px;
+    float: right;
+    margin: auto;
+    text-align: center;
+}
+#sessionScore{
+    top: 0px;
+    float: right;
+    margin: auto;
+    text-align: center;
+}
+.invisibleSessionScore{
+    color: transparent;
+}
+.visibleSessionScore{
+    color: #52C8EE;
 }
 .button {
   background-color: #52C8EE;
