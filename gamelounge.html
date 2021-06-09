@@ -33,12 +33,15 @@
                 <a class="menu" href="updates.html">Updates</a>
                 <b>|</b>
                 <a class="menu" href="bodyframe.html">BodyFrame</a>
-                        <b>|</b>
+                <b>|</b>
                 <a class="menu" href="games.html">Games</a>
             </div>
     <body>
         <div id="wrap">
             <div class="jumpGame">
+                <div id="jumpGameTitle">
+                    <span id="startTextSpan"></span>
+                </div>
                 <div class="game">
                     <div id="jumpLight"></div>
                     <div id="jumpPlayer"></div>
@@ -52,7 +55,14 @@
                     <div id="finalScore">
                         <p>Final score: <span id="finalScoreSpan"></span></p>
                     </div>
-                    <button class="button" onclick="start()">Start</button>
+                    <div id="sessionHighScore">
+                        <p>This session's high score: <span id="sessionHighScoreSpan"></span></p>
+                    </div>
+                    <br>
+                    <div id="sessionScore">
+                        <p>This session's combined score: <span id="sessionScoreSpan"></span></p>
+                    </div>
+                    <button class="button" onclick="start()"><span id="startButtonSpan"></span></button>
                     <button class="button" onclick="jump()">Jump</button>
                 </div>
             </div>
