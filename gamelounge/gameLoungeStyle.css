@@ -21,15 +21,62 @@ body {
     height: 200px;
     margin: auto;
     float: left;
+	background-image: url("https://github.com/Bamba-14/Website/blob/main/images/jumpBackgroundBlack.png?raw=true");
 }
 #jumpLight{
     width: 80px;
     height: 100px;
     top: 100px;
     position: relative;
+}
+.turnOnLight{
     background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);
     -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);
-    /*background: linear-gradient(#52C8EE, #383738);*/
+}
+.lightFlickering{
+    animation: jumpLightBlink 10s infinite linear;
+}
+
+@keyframes jumpLightBlink{
+    0%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:1.0;
+    -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
+    48%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:1.0;
+    -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
+    49%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:0.3;
+    -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
+    50%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:1.0;
+    -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
+    51%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:0.3;
+    -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
+    52%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:1.0;
+    -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
+    100%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:1.0;
+    -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
+}
+.lightStartTurnOn{
+    animation: jumpLightStartBlink 2s 1 linear;
+}
+@keyframes jumpLightStartBlink{
+    10%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:0.1;
+    -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
+    20%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:0.5;
+    -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
+    30%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:0.9;
+    -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
+    40%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:1.0;
+    -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
+    50%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:0.5;
+    -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
+    60%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:0.8;
+    -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
+    70%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:0.3;
+    -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
+    80%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:0.8;
+    -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
+    90%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:0.7;
+    -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
+    100%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:1.0;
+    -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
 }
 #jumpPlayer{
     width: 50px;
@@ -54,6 +101,18 @@ body {
     70%{top: 0px; background-image: url("https://github.com/Bamba-14/Website/blob/main/images/jumpMan3.png?raw=true");}
     90%{background-image: url("https://github.com/Bamba-14/Website/blob/main/images/jumpMan2.png?raw=true");}
     100%{top: 50px;}
+}
+
+.animateHurtPlayer{
+    animation: hurt 0.6s infinite linear;
+}
+@keyframes hurt{
+    0%{background-image: url("file:///C:/Users/erikb/Documents/erik/jumpManHurt1.png");}
+    20%{background-image: url("file:///C:/Users/erikb/Documents/erik/jumpManHurt2.png");}
+    40%{background-image: url("file:///C:/Users/erikb/Documents/erik/jumpManHurt3.png");}
+    60%{background-image: url("file:///C:/Users/erikb/Documents/erik/jumpManHurt3.png");}
+    80%{background-image: url("file:///C:/Users/erikb/Documents/erik/jumpManHurt2.png");}
+    100%{background-image: url("file:///C:/Users/erikb/Documents/erik/jumpManHurt1.png");}
 }
 
 #jumpObstacle1{
