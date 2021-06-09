@@ -107,12 +107,12 @@ body {
     animation: hurt 0.6s infinite linear;
 }
 @keyframes hurt{
-    0%{background-image: url("file:///C:/Users/erikb/Documents/erik/jumpManHurt1.png");}
-    20%{background-image: url("file:///C:/Users/erikb/Documents/erik/jumpManHurt2.png");}
-    40%{background-image: url("file:///C:/Users/erikb/Documents/erik/jumpManHurt3.png");}
-    60%{background-image: url("file:///C:/Users/erikb/Documents/erik/jumpManHurt3.png");}
-    80%{background-image: url("file:///C:/Users/erikb/Documents/erik/jumpManHurt2.png");}
-    100%{background-image: url("file:///C:/Users/erikb/Documents/erik/jumpManHurt1.png");}
+    0%{background-image: url("https://github.com/Bamba-14/Website/blob/main/images/jumpManHurt1.png?raw=true");}
+    20%{background-image: url("https://github.com/Bamba-14/Website/blob/main/images/jumpManHurt2.png?raw=true");}
+    40%{background-image: url("https://github.com/Bamba-14/Website/blob/main/images/jumpManHurt3.png?raw=true");}
+    60%{background-image: url("https://github.com/Bamba-14/Website/blob/main/images/jumpManHurt3.png?raw=true");}
+    80%{background-image: url("https://github.com/Bamba-14/Website/blob/main/images/jumpManHurt2.png?raw=true");}
+    100%{background-image: url("https://github.com/Bamba-14/Website/blob/main/images/jumpManHurt1.png?raw=true");}
 }
 
 #jumpObstacle1{
