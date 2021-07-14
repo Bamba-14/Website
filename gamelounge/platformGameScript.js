@@ -310,6 +310,8 @@ function endLevel(){
 	words = "Congratulations, you've finished the level! On to the next one."
 	count = 0;
 	drawLevelText();
+	//Destroy enemy
+	clearInterval(makeEnemy);
 
 }
 
