@@ -27,6 +27,16 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+	text-decoration: none;
+	overflow: hidden;
+	transition: 0.2s;
+}
+
+.menu:hover {
+	color: #383738;
+	background; #52C8EE;
+	box-shadow: 0 0 10px #52C8EE, 0 0 40px #52C8EE, 0 0 80px #52C8EE;
+	transition delay: 0.5s;
 }
 .main {
 	margin-top: 10px;
