@@ -166,13 +166,14 @@ a.menu:hover:before {
 	margin-right: auto;
 	float: right;
 	width: 40px;
-	padding-left: 10px;
+	/*padding-left: 10px;*/
 }
 .socials .image{
 	background: white;
 }
 a.socials{
     position: relative;
+    margin-top: 2px;
 }
 a.socials:before {
   content: "";
@@ -181,7 +182,7 @@ a.socials:before {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #FFF;
+  background-color: #52C8EE;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out;
