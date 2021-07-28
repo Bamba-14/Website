@@ -169,6 +169,9 @@ a.menu:hover:before {
 	width: 40px;
 	padding-left: 10px;
 }
+.socials.image{
+	background: white;
+}
 .socials:hover .image {
   /*opacity: 0.3;*/
   background: #EBECF8;
