@@ -27,10 +27,10 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+}
 a.menu{
     position: relative;
 }
-
 a.menu:before {
   content: "";
   position: absolute;
