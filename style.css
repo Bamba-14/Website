@@ -177,7 +177,7 @@ a.socials{
 a.socials:before {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 90%;
   height: 2px;
   bottom: -8px;
   left: 0;
