@@ -42,12 +42,11 @@ a.menu:before {
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out;
-  font-size: 30px;
 }
 a.menu:hover:before {
   visibility: visible;
   transform: scaleX(1);
-  font-size: 30px;
+  transform: scale(1.1);
 }
 .main {
 	margin-top: 10px;
@@ -172,28 +171,7 @@ a.menu:hover:before {
 }
 .socials:hover .image {
   /*opacity: 0.3;*/
-  color: white;
-}
-image.socials{
-    position: relative;
-}
-image.socials:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #FFF;
-  visibility: hidden;
-  transform: scaleX(0);
-  transition: all 0.3s ease-in-out;
-  font-size: 30px;
-}
-image.socials:hover:before {
-  visibility: visible;
-  transform: scaleX(1);
-  font-size: 30px;
+  color: #EBECF8;
 }
 /* links */
 .menu a:link {
