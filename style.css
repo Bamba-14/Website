@@ -173,7 +173,6 @@ a.menu:hover:before {
 }
 a.socials{
     position: relative;
-    margin-top: 2px;
 }
 a.socials:before {
   content: "";
@@ -182,6 +181,7 @@ a.socials:before {
   height: 2px;
   bottom: 0;
   left: 0;
+  top: 5px;
   background-color: #52C8EE;
   visibility: hidden;
   transform: scaleX(0);
