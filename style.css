@@ -180,7 +180,7 @@ a.socials:before {
   width: 90%;
   height: 2px;
   bottom: -8px;
-  left: -10px;
+  left: 10px;
   background-color: #52C8EE;
   visibility: hidden;
   transform: scaleX(0);
