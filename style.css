@@ -174,7 +174,8 @@ a.menu:hover:before {
 }
 .socials:hover .image {
   /*opacity: 0.3;*/
-  background: #EBECF8;
+  background: #52C8EE;
+  box-shadow: 0 0 140px 90px #52C8EE; /* outer cyan */
 }
 /* links */
 .menu a:link {
