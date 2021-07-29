@@ -89,10 +89,12 @@ a.menu:hover:before {
 	margin-top: 10px;
 	margin-left: 30%;
 	margin-right: 30%;
+	font-size: 18px;
+}
+.update p{
 	text-align: justify;
 	text-justify: inter-word;
 	text-align-last: center;
-	font-size: 18px;
 }
 .update h2 {
 	color: #52C8EE;
