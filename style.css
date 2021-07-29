@@ -5,13 +5,6 @@
  	text-transform: uppercase;
 	font-size: 30px;
 }
-h1 {
-	color: #52C8EE;
-	margin-left: 23%;
-	font-family: 'Oswald', sans-serif;
- 	text-transform: uppercase;
-	font-size: 30px;
-}
 body {
 	background: #383738;
 	background: linear-gradient(0deg, rgba(56,55,56,1) 0%, rgba(74,73,74,1) 85%);
@@ -103,6 +96,13 @@ a.menu:hover:before {
 	text-justify: inter-word;
 	text-align-last: center;
 }
+.update h1 {
+	color: #52C8EE;
+	margin-left: 3%;
+	font-family: 'Oswald', sans-serif;
+ 	text-transform: uppercase;
+	font-size: 30px;
+}
 .update h2 {
 	color: #52C8EE;
 	text-align: left;
@@ -125,6 +125,9 @@ a.menu:hover:before {
   margin-bottom: 20%;
   margin-right: -30%;
   margin-left: 10%;
+  text-align: justify;
+  text-justify: inter-word;
+  text-align-last: center;
 }
 .row::after {
   content: "";
