@@ -114,11 +114,11 @@ a.menu:hover:before {
 .showoff {
 	border-style: double;
 	color: #52C8EE;
-	background-color: c9e4fd;
+	background-color: #c9e4fd;
 	text-align: center;
 	width: 240px;
 	height: 580px;
-	left: 50%;
+	margin-left: 50%;
 }
 .row {
 	/*background-image: radial-gradient(circle at center, white 0, #383738, #383738 100%);*/
