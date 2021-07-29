@@ -111,6 +111,11 @@ a.menu:hover:before {
  	text-transform: uppercase;
 	font-size: 30px;
 }
+.showoff {
+	border-style: double;
+	color: #52C8EE;
+	background-color: white;
+}
 .row {
 	/*background-image: radial-gradient(circle at center, white 0, #383738, #383738 100%);*/
 }
