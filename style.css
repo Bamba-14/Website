@@ -161,9 +161,9 @@ a.menu:hover:before {
 	color: #52C8EE;
 	position: absolute;
 	bottom: 10px;
-	font-size: 18px;
+	font-size: 22px;
 	display: inline-block;
-	left: 10%;
+	left: 12%;
 	height: 2.5rem;
 	width: 250px;
 	padding-top: 30px;
