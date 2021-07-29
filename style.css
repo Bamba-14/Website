@@ -14,13 +14,6 @@ body {
 	font-family: 'Roboto', sans-serif;
  	font-weight: 400;
 }
-h2 {
-	color: #52C8EE;
-	margin-left: 3%;
-	font-family: 'Oswald', sans-serif;
- 	text-transform: uppercase;
-	font-size: 27px;
-}
 #container {
 	position: relative;
 	min-height: 95vh;
@@ -100,6 +93,14 @@ a.menu:hover:before {
 	text-justify: inter-word;
 	text-align-last: center;
 	font-size: 18px;
+}
+.update h2 {
+	color: #52C8EE;
+	text-align: left;
+	margin-left: 3%;
+	font-family: 'Oswald', sans-serif;
+ 	text-transform: uppercase;
+	font-size: 27px;
 }
 .titleupdate {
 	color: #52C8EE;
