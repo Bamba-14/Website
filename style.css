@@ -4,7 +4,7 @@
 }
 body {
 	background: #383738;
-	background: linear-gradient(0deg, rgba(56,55,56,1) 0%, rgba(68,67,68,1) 85%);
+	background: linear-gradient(0deg, rgba(56,55,56,1) 0%, rgba(74,73,74,1) 85%);
 	/*background-color: #383738;*/
 	color: white;
 	font-family: Consolas,monaco,monospace;
@@ -148,7 +148,7 @@ a.menu:hover:before {
   height: 480%;
 }
 #footer {
-	background-color: #383738;
+	/*background-color: #383738;*/
 	color: white;
 	font-family: Consolas,monaco,monospace;
 	position: absolute;
