@@ -204,13 +204,13 @@ a.socials:hover:before {
 }
 /* links */
 .menu a:link {
-	color: lightblue;
+	color: #52C8EE;
 	text-decoration: none;
 	font-family: 'Oswald', sans-serif;
 	font-size: 25px;
 }
 .menu a:visited {
-	color: lightblue;
+	color: #52C8EE;
 	text-decoration: none;
 	font-family: 'Oswald', sans-serif;
 	font-size: 25px;
