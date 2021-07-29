@@ -112,7 +112,7 @@ a.menu:hover:before {
 	font-size: 30px;
 }
 .row {
-	background-image: radial-gradient(circle at center, white 0, #383738, #383738 100%);
+	/*background-image: radial-gradient(circle at center, white 0, #383738, #383738 100%);*/
 }
 .column {
   float: left;
