@@ -96,13 +96,6 @@ a.menu:hover:before {
 	text-justify: inter-word;
 	text-align-last: center;
 }
-.titleupdate h1 {
-	color: #52C8EE;
-	margin-left: 3%;
-	font-family: 'Oswald', sans-serif;
- 	text-transform: uppercase;
-	font-size: 30px;
-}
 .update h2 {
 	color: #52C8EE;
 	text-align: left;
@@ -113,7 +106,10 @@ a.menu:hover:before {
 }
 .titleupdate {
 	color: #52C8EE;
-	margin-left: 33%;
+	margin-left: 3%;
+	font-family: 'Oswald', sans-serif;
+ 	text-transform: uppercase;
+	font-size: 30px;
 }
 .row {
 	background-image: radial-gradient(circle at center, white 0, #383738, #383738 100%);
