@@ -112,9 +112,11 @@ a.menu:hover:before {
 	font-size: 30px;
 }
 .showoff {
-	border-style: double;
+	border-style: solid;
+	border-width: 7px;
+  	border-color: #52C8EE;
 	color: #52C8EE;
-	background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(74,73,74,0) 85%);
+	background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(74,73,74,0) 90%);
 	text-align: center;
 	width: 240px;
 	height: 580px;
