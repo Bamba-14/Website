@@ -9,7 +9,7 @@ body {
 	color: white;
 	/*font-family: Consolas,monaco,monospace;*/
 	font-family: 'Roboto', sans-serif;
- 	font-weight: 300;
+ 	font-weight: 400;
 }
 h1{
 	font-family: 'Oswald', sans-serif;
@@ -161,9 +161,9 @@ a.menu:hover:before {
 	color: #52C8EE;
 	position: absolute;
 	bottom: 10px;
-	font-size: 22px;
+	font-size: 25px;
 	display: inline-block;
-	left: 12%;
+	left: 10%;
 	height: 2.5rem;
 	width: 250px;
 	padding-top: 30px;
