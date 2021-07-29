@@ -36,12 +36,10 @@ h1{
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	font-family: 'VT323', monospace;
 }
 a.menu{
     position: relative;
     font-size: 35px;
-    font-family: 'VT323', monospace;
 }
 a.menu:before {
   content: "";
@@ -209,22 +207,30 @@ a.socials:hover:before {
 .menu a:link {
 	color: lightblue;
 	text-decoration: none;
-	font-size: 25px;
+	font-family: 'Oswald', sans-serif;
+ 	text-transform: uppercase;
+	font-size: 35px;
 }
 .menu a:visited {
 	color: lightblue;
 	text-decoration: none;
-	font-size: 25px;
+	font-family: 'Oswald', sans-serif;
+ 	text-transform: uppercase;
+	font-size: 35px;
 }
 .menu a:hover {
   color: white;
   text-decoration: none;
-  font-size: 25px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 35px;
 }
 .menu a:active {
   color: white;
   text-decoration: none;
-  font-size: 25px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 35px;
 }
 /* links for updates */
 .updates a:link {
