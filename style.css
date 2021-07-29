@@ -164,8 +164,10 @@ a.menu:hover:before {
 	left: 10%;
 	height: 2.5rem;
 	width: 250px;
-	padding-top: 30px;
-	margin-top: 10px;
+	/*padding-top: 30px;
+	margin-top: 10px;*/
+	padding-top: 50px;
+	margin-top: 20px;
 }
 .socials
 {
