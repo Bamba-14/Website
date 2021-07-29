@@ -10,6 +10,10 @@ body {
 	/*font-family: Consolas,monaco,monospace;*/
 	font-family: 'Roboto', sans-serif;
 }
+h1{
+	font-family: 'VT323', monospace;
+	font-size: 20px;
+}
 #container {
 	position: relative;
 	min-height: 95vh;
@@ -30,6 +34,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+	font-family: 'VT323', monospace;
 }
 a.menu{
     position: relative;
