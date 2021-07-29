@@ -8,10 +8,11 @@ body {
 	/*background-color: #383738;*/
 	color: white;
 	/*font-family: Consolas,monaco,monospace;*/
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Cardo', serif;
 }
 h1{
-	font-family: 'VT323', monospace;
+	font-family: 'Oswald', sans-serif;
+ 	text-transform: uppercase;
 	font-size: 35px;
 }
 #container {
