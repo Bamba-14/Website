@@ -5,6 +5,13 @@
  	text-transform: uppercase;
 	font-size: 30px;
 }
+h1 {
+	color: #52C8EE;
+	margin-left: 23%;
+	font-family: 'Oswald', sans-serif;
+ 	text-transform: uppercase;
+	font-size: 30px;
+}
 body {
 	background: #383738;
 	background: linear-gradient(0deg, rgba(56,55,56,1) 0%, rgba(74,73,74,1) 85%);
