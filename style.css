@@ -35,10 +35,11 @@ h1{
 	margin-right: auto;
 	text-align: center;
 	font-family: 'VT323', monospace;
-	font-size: 40px;
 }
 a.menu{
     position: relative;
+    font-size: 35px;
+    font-family: 'VT323', monospace;
 }
 a.menu:before {
   content: "";
