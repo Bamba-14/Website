@@ -116,6 +116,7 @@ a.menu:hover:before {
 	color: #52C8EE;
 	background-color: white;
 	text-align: center;
+	width: 220px;
 }
 .row {
 	/*background-image: radial-gradient(circle at center, white 0, #383738, #383738 100%);*/
