@@ -157,9 +157,8 @@ a.menu:hover:before {
   height: 480%;
 }
 #footer {
-	/*background-color: #383738;*/
-	color: white;
-	font-family: Consolas,monaco,monospace;
+	font-family: 'Oswald', sans-serif;
+	color: #52C8EE;
 	position: absolute;
 	bottom: 10px;
 	font-size: 18px;
@@ -179,10 +178,6 @@ a.menu:hover:before {
 	width: 40px;
 	padding-left: 10px;
 	
-}
-b.socials{
-	font-family: 'Oswald', sans-serif;
-	color: #52C8EE;
 }
 .socials .image{
 	background: white;
