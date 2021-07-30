@@ -420,7 +420,8 @@ a.socials:hover:before {
 .popup h2 {
   margin-top: 0;
   color: #52C8EE;
-  font-family: Consolas,monaco,monospace;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
 }
 .popup a:link {
 	text-decoration: none;
@@ -441,7 +442,8 @@ a.socials:hover:before {
 .popup .content {
   max-height: 30%;
   overflow: auto;
-  font-family: Consolas,monaco,monospace;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 18px;
 }
 
