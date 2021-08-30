@@ -189,8 +189,19 @@ a.menu:hover:before {
 .gameButton:hover::before{
   height: 480%;
 }
-.rowG {
-  /*display: flex;*/
+.columnG {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 700px;
+}
+.rowG:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*.rowG {
+  /*display: flex;
   padding-bottom: 5.5rem;
 }
 .columnG {
@@ -198,6 +209,7 @@ a.menu:hover:before {
   padding: 10px;
   height: 700px;
 }
+*/
 #footer {
 	font-family: 'Oswald', sans-serif;
 	color: #52C8EE;
