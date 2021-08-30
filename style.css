@@ -156,7 +156,7 @@ a.menu:hover:before {
   transform: translate(-50%,-50%);
 }
 .buttonG{
-  position: relative;
+  position: bottom;
   display: block;
   color: white;
   font-size: 20px;
