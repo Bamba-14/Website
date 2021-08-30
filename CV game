@@ -56,7 +56,7 @@
                     <p>An interactive CV, learn about me while you game.</p>
                 </div>
                 <div class="main">
-                    <iframe src="https://www.buckyside.com/savethepets/index.html" style="border:0px #000000 none;" name="CV game" scrolling="no" frameborder="1" height="928px" width="522px" float:right></iframe>
+                    <iframe src="https://www.buckyside.com/cvgame/index.html" style="border:0px #000000 none;" name="CV game" scrolling="no" frameborder="1" height="928px" width="522px" float:right></iframe>
                 </div>
             </div>
         </body>
