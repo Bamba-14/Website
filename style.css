@@ -143,6 +143,7 @@ a.menu:hover:before {
 }
 .slides {
 	display:none;
+	margin-left: 20%;
 }
 .buttonGame{
   position: relative;
@@ -163,7 +164,8 @@ a.menu:hover:before {
   overflow: hidden;
   transition: 1s all ease;
   left: 50%;
-  margin-right: 10%;
+  margin-right: 20%;
+  margin-left: 20%;
 }
 .buttonG::before{
   background: #52C8EE;
