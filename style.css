@@ -183,6 +183,14 @@ a.menu:hover:before {
 .gameButton:hover::before{
   height: 480%;
 }
+.row {
+  display: flex;
+}
+.column {
+  flex: 50%;
+  padding: 10px;
+  height: 300px;
+}
 #footer {
 	font-family: 'Oswald', sans-serif;
 	color: #52C8EE;
