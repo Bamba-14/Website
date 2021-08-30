@@ -156,7 +156,7 @@ a.menu:hover:before {
   transform: translate(-50%,-50%);
 }
 .buttonG{
-  position: bottom;
+  position: relative;
   display: block;
   color: white;
   font-size: 20px;
@@ -191,6 +191,7 @@ a.menu:hover:before {
 }
 .rowG {
   display: flex;
+  padding-bottom: 5.5rem;
 }
 .columnG {
   flex: 50%;
