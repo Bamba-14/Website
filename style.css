@@ -183,10 +183,10 @@ a.menu:hover:before {
 .gameButton:hover::before{
   height: 480%;
 }
-.row {
+.rowG {
   display: flex;
 }
-.column {
+.columnG {
   flex: 50%;
   padding: 10px;
   height: 300px;
