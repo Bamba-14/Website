@@ -208,7 +208,7 @@ a.menu:hover:before {
   display: flex;
 }
 .columnG {
-  flex: 50%;
+  flex: 33%;
   padding: 10px;
 }
 #footer {
