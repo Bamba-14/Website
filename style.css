@@ -149,6 +149,10 @@ a.menu:hover:before {
 	display:none;
 	margin-left: 0%;
 }
+.slidesSA {
+	display:none;
+	margin-left: 0%;
+}
 .buttonGame{
   position: relative;
   top: 20px;
