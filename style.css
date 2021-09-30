@@ -197,7 +197,7 @@ a.menu:hover:before {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	max-width: 1300px;
+	max-width: 1400px;
 	flex-wrap: wrap;
 	z-index: 1;
 	margin: auto;
