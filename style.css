@@ -389,6 +389,45 @@ a.socials:hover:before {
 	position:relative;
 	left:1px;
 }
+/* games inspirational */
+.games-screen{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40vh;
+	flex-wrap: wrap;
+	z-index: 1;
+	margin: auto;
+}
+.games-screen h1{
+	position: absolute;
+	right: 40px;
+	font-size: 6vw;
+	color: rgba(255, 255, 255, 0.05);
+	pointer-events: none;
+	justify-content: right;
+	align-items: right;
+	text-align: right;
+}
+.hidden {
+  opacity:0;
+}
+.games-inspirational {
+	font-family: 'Oswald', sans-serif;
+	font-size:25px;
+	text-align:left;
+	height: 10%;
+	max-width: 60vh;
+	position:relative;
+	top: 5vh;
+	left: -10vh;
+}
+.games-inspirational-underscore{
+	display:inline-block;
+	position:relative;
+	left:1px;
+}
 /* links for updates */
 .updates a:link {
 	color: lightblue;;
