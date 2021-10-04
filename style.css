@@ -87,8 +87,8 @@ a.menu:hover:before {
 }
 .blog {
 	margin-top: 10px;
-	margin-left: 30%;
-	margin-right: 30%;
+	margin-left: 20%;
+	margin-right: 20%;
 	font-size: 18px;
 }
 .blog p{
@@ -103,6 +103,14 @@ a.menu:hover:before {
 	font-family: 'Oswald', sans-serif;
  	text-transform: uppercase;
 	font-size: 27px;
+}
+.blog h5 {
+	color: #fff;
+	text-align: left;
+	margin-left: 0%;
+	font-size: 15px;
+	opacity: 0.8;
+	font-weight: 200;
 }
 .titleblog {
 	color: #52C8EE;
