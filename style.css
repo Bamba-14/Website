@@ -66,7 +66,7 @@ a.menu:hover:before {
 .main iframe {
 	padding-left: 0px;
 }
-.updates {
+.blogs {
 	font-size: 20px;
 	margin-top: 25px;
 	margin-left: 20%;
@@ -85,18 +85,18 @@ a.menu:hover:before {
 	margin-right: auto;
 	width: 100%;
 }
-.update {
+.blog {
 	margin-top: 10px;
 	margin-left: 30%;
 	margin-right: 30%;
 	font-size: 18px;
 }
-.update p{
+.blog p{
 	text-align: justify;
 	text-justify: inter-word;
 	text-align-last: center;
 }
-.update h2 {
+.blog h2 {
 	color: #52C8EE;
 	text-align: left;
 	margin-left: 3%;
@@ -104,7 +104,7 @@ a.menu:hover:before {
  	text-transform: uppercase;
 	font-size: 27px;
 }
-.titleupdate {
+.titleblog {
 	color: #52C8EE;
 	margin-left: 33%;
 	font-family: 'Oswald', sans-serif;
@@ -259,8 +259,8 @@ a.menu:hover:before {
 	font-weight: 800;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-/* Updates section */
-.updates-container
+/* Blogs section */
+.blogs-container
 {
 	position: relative;
 	display: flex;
@@ -271,7 +271,7 @@ a.menu:hover:before {
 	z-index: 1;
 	margin: auto;
 }
-.updates-container .updates-card
+.blogs-container .blogs-card
 {
 	position: relative;
 	width: 1200px;
@@ -290,14 +290,14 @@ a.menu:hover:before {
 	border-bottom: 1px solid rgba(255, 255, 255, 0);
 	transition: 0.5s;
 }
-.updates-container .updates-card:hover
+.blogs-container .blogs-card:hover
 {
 	border-top: 1px solid rgba(255, 255, 255, 0);
 	border-left: 1px solid rgba(255, 255, 255, 0);
 	border-right: 1px solid rgba(255, 255, 255, 0.5);
 	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
-.updates-container .updates-card .updates-content
+.blogs-container .blogs-card .blogs-content
 {
 	padding: 20px;
 	text-align: left;
@@ -314,12 +314,12 @@ a.menu:hover:before {
 	z-index: 1;
 	maring: auto;
 }
-.updates-container .updates-card:hover .updates-content
+.blogs-container .blogs-card:hover .blogs-content
 {
 	/*transform: translateY(0px);*/
 	opacity: 1;
 }
-.updates-container .updates-card .updates-content h2
+.blogs-container .blogs-card .blogs-content h2
 {
 	color: #52C8EE;
 	font-family: 'Oswald', sans-serif;
@@ -327,13 +327,13 @@ a.menu:hover:before {
 	margin: auto;
 	margin-right: 20px;
 }
-.updates-container .updates-card .updates-content p
+.blogs-container .blogs-card .blogs-content p
 {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	margin-right: 20px;
 }
-.updates-container .updates-card .updates-content a
+.blogs-container .blogs-card .blogs-content a
 {
 	position: absolute;
 	left: 1080px;
@@ -568,40 +568,23 @@ a.socials:hover:before {
 	position:relative;
 	left:1px;
 }
-/* links for updates */
-.updates a:link {
-	color: lightblue;;
-	text-decoration: none;
-}
-.updates a:visited {
-	color: lightblue;
-	text-decoration: none;
-}
-.updates a:hover {
-	color: lightgrey;
-	text-decoration: none;
-}
-.updates a:active {
-	color: lightgrey;
-	text-decoration: none;
-}
-/* links for mid-text in update */
-.update a:link {
+/* links for mid-text in blog */
+.blog a:link {
 	color: lightblue;
 	text-decoration: none;
 	font-weight: bold;
 }
-.update a:visited {
+.blog a:visited {
 	color: lightblue;
 	text-decoration: none;
 	font-weight: bold;
 }
-.update a:hover {
+.blog a:hover {
 	color: #EBECF8;
 	text-decoration: none;
 	font-weight: bold;
 }
-.update a:active {
+.blog a:active {
 	color: #EBECF8;
 	text-decoration: none;
 	font-weight: bold;
@@ -629,12 +612,12 @@ a.socials:hover:before {
 }
   /* For mobile phones: */
 @media only screen and (max-width:961px) {
-  .main, .rowf, .updates, .update {
+  .main, .rowf, .blogs, .blog {
     width:90%;
     margin-left: 3%;
 	margin-right: 3%;
   }
-  .title, .titleupdate {
+  .title, .titleblog {
     width:90%;
     margin-left: 4%;
     margin-right: 5%;
