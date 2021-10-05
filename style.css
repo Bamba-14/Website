@@ -662,6 +662,9 @@ a.socials:hover:before {
 	transition: max-width 1.5s;
 	transition-delay: 0;
 }
+.imagePixelArt {
+	max-width: 100%;
+}
 }
  /* Character description */
 .gif{
