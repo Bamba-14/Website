@@ -692,6 +692,7 @@ a.socials:hover:before {
 	left: 10px;
 	position: relative;
 	margin: 5px;
+	opacity: 1;
 }
 .blogs-container .blogs-card .blogs-content h2, .blogs-container .blogs-card .blogs-content p{
 	margin-right: 2px;
@@ -711,6 +712,28 @@ a.socials:hover:before {
 	left: 0px;
 	justify-content: left;
 	align-items: left;
+	opacity: 1;
+}
+.home-inspirational{
+	max-width: 70%;
+	left: -5%;
+	top: 10vh;
+}
+.home-screen{
+	height: 40vh;
+}
+.bodyframe-container .bodyframe-card
+{
+	height: 700px;
+}
+.bodyframe-container .bodyframe-card .bodyframe-content
+{
+	padding: 20px;
+	text-align: center;
+	transform: translateY(0px);
+}
+.bodyframe-container .bodyframe-card .bodyframe-content p{
+	margin: 10px;
 }
 }
  /* Character description */
