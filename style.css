@@ -680,7 +680,9 @@ a.socials:hover:before {
 }
 .menu{
 	margin-right: 0px;
+	margin-left: 0px;
 	text-align: center;
+	width: 93vw;
 }
 .menu, .menu a:link, .menu a:visited, .menu a:hover, .menu a:active{
 	font-size: 25px;
