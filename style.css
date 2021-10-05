@@ -85,6 +85,11 @@ a.menu:hover:before {
 	margin-right: auto;
 	width: 100%;
 }
+.imagePixelArt {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 .blog {
 	margin-top: 10px;
 	margin-left: 20%;
@@ -94,7 +99,7 @@ a.menu:hover:before {
 .blog p{
 	text-align: justify;
 	text-justify: inter-word;
-	text-align-last: center;
+	text-align-last: left;
 }
 .blog h2 {
 	color: #52C8EE;
@@ -114,7 +119,7 @@ a.menu:hover:before {
 }
 .titleblog {
 	color: #52C8EE;
-	margin-left: 33%;
+	text-align: center;
 	font-family: 'Oswald', sans-serif;
  	text-transform: uppercase;
 	font-size: 30px;
