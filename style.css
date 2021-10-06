@@ -222,9 +222,6 @@ a.menu{
 .games-container .games-card
 {
 	position: relative;
-/*	width: 280px;
-	height: 400px;
-	margin: 30px;*/
 	width: 400px;
 	height: 550px;
 	margin: 30px;
@@ -724,7 +721,7 @@ a.socials:hover:before {
 }
 .bodyframe-container .bodyframe-card
 {
-	height: 700px;
+	height: 550px;
 }
 .bodyframe-container .bodyframe-card .bodyframe-content
 {
@@ -734,6 +731,33 @@ a.socials:hover:before {
 }
 .bodyframe-container .bodyframe-card .bodyframe-content p{
 	margin: 10px;
+}
+.bodyframe-container .bodyframe-card:hover .bodyframe-content
+{
+	transform: translateY(0px);
+}
+.games-inspirational{
+	max-width: 70%;
+	left: -5%;
+	top: 3vh;
+}
+.games-container .games-card
+{
+	height: 550px;
+}
+.games-container .games-card .games-content
+{
+	padding: 20px;
+	text-align: center;
+	transform: translateY(0px);
+	opacity: 1;
+}
+.games-container .games-card .games-content p{
+	margin: 10px;
+}
+.games-container .games-card:hover .games-content
+{
+	transform: translateY(0px);
 }
 }
  /* Character description */
