@@ -353,6 +353,37 @@ a.menu{
 {
 	text-decoration: none;
 }
+.blog-navigation{
+	}
+.blog-navigation a:link {
+	color: #52C8EE;
+	text-decoration: none;
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	position: relative;
+	padding: 10px;
+}
+.blog-navigation a:visited {
+	color: #52C8EE;
+	text-decoration: none;
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	padding: 10px;
+}
+.blog-navigation a:hover {
+  color: white;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  padding: 10px;
+}
+.blog-navigation a:active {
+  color: white;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  padding: 10px;
+}
 /* BodyFrame section*/
 .bodyframe-container
 {
@@ -623,7 +654,7 @@ a.socials:hover:before {
 	font-weight: bold;
 }
   /* For mobile phones: */
-@media only screen and (max-width:961px) {
+@media only screen and (max-width:1280px) {
   .main, .rowf, .blogs, .blog {
     width:90%;
     margin-left: 3%;
