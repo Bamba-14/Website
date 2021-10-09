@@ -802,6 +802,133 @@ a.socials:hover:before {
 	margin-left: -2vh;
 }
 }
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
+  .ipad-landscape { color: blue; }
+    .main, .rowf, .blogs, .blog {
+    width:90%;
+    margin-left: 3%;
+	margin-right: 3%;
+  }
+  .title, .titleblog {
+    width:90%;
+    margin-left: 4%;
+    margin-right: 5%;
+  }
+  .column {
+  float: left;
+  width: 49%;
+  margin-top: 20%;
+  margin-bottom: 20%;
+  margin-right: 0;
+  margin-left: 30%;
+  }
+.anim{
+	width: 100%;
+	float:left;
+	margin-top: 30px;
+	margin-left: 4%;
+    margin-right: 100%;
+}
+.sidebarl{
+	display:none;
+}
+.sidebarr{
+	display:none;
+}
+.imgr{
+	max-width: 100%;
+	min-width: 100%;
+	transition: max-width 1.5s;
+	transition-delay: 0;
+}
+.imagePixelArt {
+	max-width: 100%;
+}
+.menu{
+	margin-right: 0px;
+	margin-left: 0px;
+	text-align: center;
+	width: 93vw;
+}
+.menu, .menu a:link, .menu a:visited, .menu a:hover, .menu a:active{
+	font-size: 25px;
+	padding: 5px;
+}
+.blogs-container .blogs-card .blogs-content a{
+	left: 10px;
+	position: relative;
+	margin: 5px;
+	opacity: 1;
+}
+.blogs-container .blogs-card .blogs-content h2, .blogs-container .blogs-card .blogs-content p{
+	margin-right: 2px;
+	margin: 0px;
+	padding: 2px;
+}
+.blogs-container .blogs-card
+{
+	position: relative;
+	height: 200px;
+	margin: 5px;
+}
+.blogs-container .blogs-card .blogs-content
+{
+	padding: 5px;
+	text-align: left;
+	left: 0px;
+	justify-content: left;
+	align-items: left;
+	opacity: 1;
+}
+.home-inspirational{
+	max-width: 70%;
+	left: -5%;
+	top: 10vh;
+}
+.home-screen{
+	height: 40vh;
+}
+.bodyframe-container .bodyframe-card
+{
+	height: 550px;
+}
+.bodyframe-container .bodyframe-card .bodyframe-content
+{
+	padding: 20px;
+	text-align: center;
+	transform: translateY(0px);
+}
+.bodyframe-container .bodyframe-card .bodyframe-content p{
+	margin: 10px;
+}
+.bodyframe-container .bodyframe-card:hover .bodyframe-content
+{
+	transform: translateY(0px);
+}
+.games-inspirational{
+	max-width: 70%;
+	left: -5%;
+	top: 3vh;
+}
+.games-container .games-card
+{
+	height: 550px;
+}
+.games-container .games-card .games-content
+{
+	padding: 20px;
+	text-align: center;
+	transform: translateY(0px);
+	opacity: 1;
+}
+.games-container .games-card .games-content p{
+	margin: 10px;
+}
+.games-container .games-card:hover .games-content
+{
+	transform: translateY(0px);
+}
+}
  /* Character description */
 .gif{
 	border-radius: 5px;
