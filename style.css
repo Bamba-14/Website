@@ -533,6 +533,23 @@ a.socials:hover:before {
   font-size: 35px;
   padding: 10px;
 }
+.home-png{
+	height: 30vh;
+	margin-bottom: -30vh;
+	margin-left: 10vh;
+}
+
+@keyframes glitch{
+  2%,64%{
+    transform: translate(2px,0) skew(0deg);
+  }
+  4%,60%{
+    transform: translate(-2px,0) skew(0deg);
+  }
+  62%{
+    transform: translate(0,0) skew(5deg); 
+  }
+}
 .home-screen{
 	position: relative;
 	display: flex;
@@ -778,6 +795,11 @@ a.socials:hover:before {
 .games-container .games-card:hover .games-content
 {
 	transform: translateY(0px);
+}
+.home-png{
+	height: 25vh;
+	margin-bottom: -29vh;
+	margin-left: -2vh;
 }
 }
  /* Character description */
