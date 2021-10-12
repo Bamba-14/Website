@@ -479,6 +479,11 @@ a.socials:hover:before {
 	position:relative;
 	left:1px;
 }
+.home-png{
+	margin-left: 20vh;
+	margin-bottom: 30vh;
+	height: 40vh;
+}
 /* games inspirational */
 .games-screen{
 	position: relative;
