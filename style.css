@@ -691,8 +691,13 @@ a.socials:hover:before {
 {
 	transform: translateY(0px);
 }
-  /* For iPads: */
+.home-png{
+	margin-left: -2vh;
+	margin-bottom: -25vh;
+	height: 25vh;
 }
+}
+  /* For iPads: */
 @media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
   .ipad-landscape { color: blue; }
     .main, .rowf, .blogs, .blog {
