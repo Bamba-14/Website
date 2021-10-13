@@ -1,3 +1,19 @@
+// BuckySide introduction animation
+  buckysideIntroductionSpan.classList.add("buckysideIntroductionSpan");
+// Load initial animation
+  document.getElementById("buckysideIntroductionSpan").innerHTML = "<img class='home-png' src='./images/Mr. BuckySide introduction.png' alt='Introduction of character Mr. BuckySide'>";
+// When it's done change it to static image so it doesn't loop
+  setTimeout(() => {
+    document.getElementById("buckysideIntroductionSpan").innerHTML = "<img class='home-png' src='./images/Mr. BuckySide 2.png' alt='Introduction of character Mr. BuckySide'>";
+     }, 7160);
+  // When it's done change it to static image so it doesn't loop
+  setTimeout(() => {
+    document.getElementById("buckysideIntroductionSpan").style.animation = "glitch 1s 1s 1";
+  }, 5760);
+
+
+
+
 // function([string1, string2],target id,[color1,color2])    
  consoleText(['“You do not find the happy life. You make it.” – Camilla Eyring Kimball', '“The most wasted of days is one without laughter.” – E.E. Cummings', '“Make each day your masterpiece.” – John Wooden'], 'text',['tomato','mediumorchid','lightblue']);
 

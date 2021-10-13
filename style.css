@@ -484,6 +484,14 @@ a.socials:hover:before {
 	margin-bottom: -30vh;
 	height: 40vh;
 }
+.home-png-anim{
+	animation: glitch 0.2s 0.2s 2;
+}
+@keyframes glitch {
+  49%{
+    opacity: 0%;
+  }
+}
 /* games inspirational */
 .games-screen{
 	position: relative;
