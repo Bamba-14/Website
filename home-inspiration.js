@@ -4,7 +4,7 @@
   document.getElementById("buckysideIntroductionSpan").innerHTML = "<img class='home-png' src='./images/Mr. BuckySide introduction.png' alt='Introduction of character Mr. BuckySide'>";
 // When it's done change it to static image so it doesn't loop
   setTimeout(() => {
-    document.getElementById("buckysideIntroductionSpan").innerHTML = "<img class='home-png' src='./images/Mr. BuckySide 2.png' alt='Introduction of character Mr. BuckySide'>";
+    document.getElementById("buckysideIntroductionSpan").innerHTML = "<img class='home-png' src='./images/MrBuckySideIntro.png' alt='Introduction of character Mr. BuckySide'>";
      }, 7160);
   // When it's done change it to static image so it doesn't loop
   setTimeout(() => {
