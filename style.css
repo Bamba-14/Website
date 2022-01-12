@@ -309,6 +309,14 @@ a.menu{
   font-size: 20px;
   padding-top: 10px;
 }
+.codeSnippets {
+  border-radius: 25px;
+  background: #52C8EE;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+  font-family: Consolas, monaco, monospace;
+}
 /* BodyFrame section*/
 .bodyframe-container
 {
