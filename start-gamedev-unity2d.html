@@ -62,6 +62,12 @@
                 <p>Now it's time for us to create our first script! Let's head to the project area and the same way we've created and Art folder before, we now create a "Scripts" folder. Then inside the folder right click and create a new C# script, you can name it "PlayerMovement". Open the script. There are two methods already created, a Start method and an Update method. A start method runs only once and that's at the start when the game object becomes active. The Update method is started after the Start method and is being continously exectued. There are a lot of other methods, which all function differently and can be used in different scenarios. We'll learn two other methods in this tutorial post.</p>
                 <p>The first is a method called "Awake". It's similar to the start method but it's executed before the Start method. I like using the Awake method when I'm setting variables, getting components and other similar tasks. However, before the methods let's create variables, one will be a float called "speed" and the other one will be a RigidBody2D, which will allow us manipulate the RigidBody2D inside our code. Variables can be "private" or "public" (same with methods or voids). If it's private it means it can only be used in this script and it also won't be visible in the inspector. If it's public it can be referenced and used in other methods/voids and it will be visible in the Inspector.</p>
                 <p>After the variables are completed, let's create the Awake method and assign the RigidBody2D component.</p>
+                <div class="codeSnippets">
+                    <p>void Awake()
+                    {
+                        rigidBody2D = GetComponent.()"
+                    }</p>
+                </div>
                 <img class="imagePixelArt" src="./images/blog/GettingStartedWithUnityCalendar.png" alt="Simple calendar Pixel Art">
                 <h2>Why Unity?</h2>
                 <p></p>
