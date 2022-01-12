@@ -7,7 +7,7 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <meta name="description" content="BuckySide blog how to start with Unity 2D">
         <meta name="author" content="BuckySide">
-        <link rel="icon" type="image/png" href="./images/Mr. BuckySide.png"/>
+        <link rel="icon" type="image/png" href="../../images/Mr. BuckySide.png"/>
         <link rel="stylesheet" href="./style.css">
         <!-- fonts -->
         <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto:300,400,700" rel="stylesheet">
@@ -45,7 +45,7 @@
                 <br>
                 <h2>How to start a project</h2>
                 <p>After you start Unity Hub, simply click on "new" and select the type of project you wish to create. We'll start with a 2D project since it's a bit simpler if you're a solo developer and completly new to game development. If you'd like to start a 3D project you can select that here. Then name your project and select where you want it to be saved. After that, click "create" and wait a bit for the project to load.</p>
-                <img class="imagePixelArt" src="./images/blog/GettingStartedWithUnityEngine.png" alt="Car engine open hood confised person Pixel Art">
+                <img class="imagePixelArt" src="../../images/blog/GettingStartedWithUnityEngine.png" alt="Car engine open hood confised person Pixel Art">
                 <h2>Quick overview of the interface</h2>
                 <p>1) Tools to manipulate game objects - move them, resize and rotate them etc.</p>
                 <p>2) A menu of all game objects in your current scene, here is also the place to create new ones.</p>
@@ -53,11 +53,11 @@
                 <p>4) Project folder, where you can create scripts, prefabs, scenes, materials and organise them in folders.</p>
                 <p>5) Game object settings, you can add components and then set them to the values you want.</p>
                 <p>Don't worry, the interface will feel more familiar as soon as you start with some examples.</p>
-                <img class="imagePixelArt" src="./images/blog/GettingStartedWithUnityEngine.png" alt="Car engine open hood confised person Pixel Art">
+                <img class="imagePixelArt" src="../../images/blog/GettingStartedWithUnityEngine.png" alt="Car engine open hood confised person Pixel Art">
                 <h2>Creating a player</h2>
                 <p>The first thing you need in order to create a player is a game object. In the Hierarchy area, right click and select "Create empty". Now you can name it "Player", so you'll always know which game object is the Player game object. Then go to the "Inspector" on the right and for the tag select "Player". You will soon find out why this is usefull.</p>
                 <p>Right now you still can't see the player, so let's change that. In the "Inspector" click add component and in the search area type "Sprite Renderer" and confirm it. This component allows us to use an image to represent the game object. If you have your own art you can use that, if not you can download my art <a href="https://unity3d.com/get-unity/download"target="_blank">here</a>. Now let's go to the "Project" area and let's right click and create a new folder, name it "Art". Then simply drag the art into Unity in the Art folder. Now click on the PlayerMovement you've just imported and in the inspector select Multiple, 16, Point No Filter and Uncompressed. Then click "Apply" and after it's done click on the "Sprite Editor". Now select slice, grid by cell size and enter 16x16 - that's correct for the pixel art you've downloaded in this post, if you have different art, slice it based in the way it was created. Then click "Finish" and we're done with importing art for our player. Now let's once again click on the Player game object and select the little know in the Sprite Renderer component in the "Inspector". Now select a sprite, I ussualy just go with a front facing character, don't worry we'll add animations later and it won't be important.</p>
-                <img class="imagePixelArt" src="./images/blog/GettingStartedWithUnityToolbox.png" alt="Toolbox Pixel Art">
+                <img class="imagePixelArt" src="../../images/blog/GettingStartedWithUnityToolbox.png" alt="Toolbox Pixel Art">
                 <p>The next thing we want to do is add more components to the Player game object, so we can make him move and interact with the game world. Let's add components (same way we did the Sprite Renderer), "BoxCollider2D" and "RigidBody2D". The "RigidBody2D" component will be used to move our character and the "BoxCollider2D" component will be used for our character to interact with the game world. For our example we'll use a 4-way directional movement, which is used in top-down games. In order to the that you should go to the inspector area and inside the "RigidBody2D" component set "Gravity Scale" to 0. This way gravity won't pull out player down. If you want for example a platformer, you can use gravity since you have 2-way directional movement with jumps for going up and gravity to pull you back down.</p>
                 <p>Now it's time for us to create our first script! Let's head to the project area and the same way we've created and Art folder before, we now create a "Scripts" folder. Then inside the folder right click and create a new C# script, you can name it "PlayerMovement". Open the script. There are two methods already created, a Start method and an Update method. A start method runs only once and that's at the start when the game object becomes active. The Update method is started after the Start method and is being continously exectued. There are a lot of other methods, which all function differently and can be used in different scenarios. We'll learn two other methods in this tutorial post.</p>
                 <p>The first is a method called "Awake". It's similar to the start method but it's executed before the Start method. I like using the Awake method when I'm setting variables, getting components and other similar tasks. However, before the methods let's create variables, one will be a float called "speed" and the other one will be a RigidBody2D, which will allow us manipulate the RigidBody2D inside our code. Variables can be "private" or "public" (same with methods or voids). If it's private it means it can only be used in this script and it also won't be visible in the inspector. If it's public it can be referenced and used in other methods/voids and it will be visible in the Inspector.</p>
@@ -67,16 +67,16 @@
                     <p>    rigidBody2D = GetComponent.()"</p>
                     <p>}</p>
                 </div>
-                <img class="imagePixelArt" src="./images/blog/GettingStartedWithUnityCalendar.png" alt="Simple calendar Pixel Art">
+                <img class="imagePixelArt" src="../../images/blog/GettingStartedWithUnityCalendar.png" alt="Simple calendar Pixel Art">
                 <h2>Why Unity?</h2>
                 <p></p>
-                <img class="imagePixelArt" src="./images/blog/GettingStartedWithUnityDeskPC.png" alt="Desk with PC and a chair Pixel Art">
+                <img class="imagePixelArt" src="../../images/blog/GettingStartedWithUnityDeskPC.png" alt="Desk with PC and a chair Pixel Art">
                 <p></p>
                 <p></p>
                 <h2></h2>
                 <p>In the next post we'll start-up Unity and I'll teach you how to start a project and we might even code our first functionality!</p>
                 <p>If you enjoyed and maybe learned something reading this, <a href="https://twitter.com/SideBucky"target="_blank">follow me on Twitter</a>, so you'll be notified when the next post is uploaded.</p>
-                <img class="imagePixelArt" src="./images/blog/GettingStartedWithUnityImage.png" style="width:100%" alt="Garage Pixel Art">
+                <img class="imagePixelArt" src="../../images/blog/GettingStartedWithUnityImage.png" style="width:100%" alt="Garage Pixel Art">
                 <br><br>
                 <div class="blog-navigation" style="height:100px;">
                     <a href="blogs/gamedev-blog/gamdev-blog-start-gamedev.html">PREVIOUS</a>
@@ -87,9 +87,9 @@
     </body>
     <footer id="footer">
             <b>Socials:</b>
-            <a class="socials" href="https://www.youtube.com/channel/UCi7eHWvpB9wFnbNONZ4L64g"target="_blank"><img class="image" src="./images/youtube-icon.png" alt="Youtube icon" style="width:100%"></a>
-            <a class="socials" href="mailto:buckyside@gmail.com"><img class="image" src="./images/mail-icon.png" alt="Mail icon" style="width:100%"></a>
-            <a class="socials" href="https://twitter.com/SideBucky"><img class="image" src="./images/twitter-icon.png" alt="Twitter icon" style="width:100%"></a>
+            <a class="socials" href="https://www.youtube.com/channel/UCi7eHWvpB9wFnbNONZ4L64g"target="_blank"><img class="image" src="../../images/youtube-icon.png" alt="Youtube icon" style="width:100%"></a>
+            <a class="socials" href="mailto:buckyside@gmail.com"><img class="image" src="../../images/mail-icon.png" alt="Mail icon" style="width:100%"></a>
+            <a class="socials" href="https://twitter.com/SideBucky"><img class="image" src="../../images/twitter-icon.png" alt="Twitter icon" style="width:100%"></a>
     </footer>
     </div>
 </html>
