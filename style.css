@@ -310,10 +310,9 @@ a.menu{
   padding-top: 10px;
 }
 .codeSnippets {
-  border-radius: 25px;
-  border-color:#52C8EE;
+  border-radius: 12px;
   padding: 20px;
-  border-width: 2px;
+  border: 2px solid #52C8EE;
   width: 100%;
   font-size: 14px;
   font-family: Consolas, monaco, monospace;
