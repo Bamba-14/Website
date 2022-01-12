@@ -286,28 +286,28 @@ a.menu{
 	font-family: 'Oswald', sans-serif;
 	font-size: 20px;
 	position: relative;
-	padding: 10px;
+	padding-top: 10px;
 }
 .blog-navigation a:visited {
 	color: #52C8EE;
 	text-decoration: none;
 	font-family: 'Oswald', sans-serif;
 	font-size: 20px;
-	padding: 10px;
+	padding-top: 10px;
 }
 .blog-navigation a:hover {
   color: white;
   text-decoration: none;
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
-  padding: 10px;
+  padding-top: 10px;
 }
 .blog-navigation a:active {
   color: white;
   text-decoration: none;
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
-  padding: 10px;
+  padding-top: 10px;
 }
 /* BodyFrame section*/
 .bodyframe-container
