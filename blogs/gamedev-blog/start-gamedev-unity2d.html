@@ -7,7 +7,7 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <meta name="description" content="BuckySide blog how to start with Unity 2D">
         <meta name="author" content="BuckySide">
-        <link rel="icon" type="image/png" href="./images/Mr. BuckySide.png"/>
+        <link rel="icon" type="image/png" href="../../images/Mr. BuckySide.png"/>
         <link rel="stylesheet" href="./style.css">
         <!-- fonts -->
         <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto:300,400,700" rel="stylesheet">
@@ -40,12 +40,10 @@
             <div class="blog">
                 <h5>13. jan. 2021</h5>
                 <p>The tutorial is written in a step by step process. If you're familiar with Unity or you're only interested in the code part, <b>you can skip to the end where you can find the snippet of entire code.</b></p>
-                <br>
                 <p>As we've discussed in the previous post, Unity is a very popular and capable game engine. In order to use it you have to download it first on there website, you can do that <a href="https://unity3d.com/get-unity/download"target="_blank">here</a>. Select the correct version for your PC and follow the instalation process (it's very easy and similar to any software install)</p>
                 <br>
                 <h2>How to start a project</h2>
                 <p>After you start Unity Hub, simply click on "new" and select the type of project you wish to create. We'll start with a 2D project since it's a bit simpler if you're a solo developer and completly new to game development. If you'd like to start a 3D project you can select that here. Then name your project and select where you want it to be saved. After that, click "create" and wait a bit for the project to load.</p>
-                <img class="imagePixelArt" src="./images/blog/GettingStartedWithUnityEngine.png" alt="Car engine open hood confised person Pixel Art">
                 <h2>Quick overview of the interface</h2>
                 <p>1) Tools to manipulate game objects - move them, resize and rotate them etc.</p>
                 <p>2) A menu of all game objects in your current scene, here is also the place to create new ones.</p>
@@ -53,11 +51,11 @@
                 <p>4) Project folder, where you can create scripts, prefabs, scenes, materials and organise them in folders.</p>
                 <p>5) Game object settings, you can add components and then set them to the values you want.</p>
                 <p>Don't worry, the interface will feel more familiar as soon as you start with some examples.</p>
-                <img class="imagePixelArt" src="./images/blog/GettingStartedWithUnityEngine.png" alt="Car engine open hood confised person Pixel Art">
+                <img class="imagePixelArt" src="../../images/blog/start-gamedev-unity2d/unity-overview.png" alt="Unity interface Overview BuckySide">
                 <h2>Creating a player</h2>
                 <p>The first thing you need in order to create a player is a game object. In the Hierarchy area, right click and select "Create empty". Now you can name it "Player", so you'll always know which game object is the Player game object. Then go to the "Inspector" on the right and for the tag select "Player". You will soon find out why this is usefull.</p>
                 <p>Right now you still can't see the player, so let's change that. In the "Inspector" click add component and in the search area type "Sprite Renderer" and confirm it. This component allows us to use an image to represent the game object. If you have your own art you can use that, if not you can download my art <a href="https://drive.google.com/drive/folders/12BuzuW9ICOcpQmANkoqs6ppiOt9SWfI0?usp=sharing"target="_blank">here</a>. Now let's go to the "Project" area and let's right click and create a new folder, name it "Art". Then simply drag the art into Unity in the Art folder. Now click on the "tutorial-player-walk" image you've just imported and in the inspector select:</p>
-                <p>Sprite mode: Multipl,</p>
+                <p>Sprite mode: Multiple</p>
                 <p>Pixels per Unity: 16</p>
                 <p>Filter mode: Point (no filter)</p>
                 <p>Compression: None</p>
