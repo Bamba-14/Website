@@ -158,16 +158,114 @@ public class CameraMovement : MonoBehaviour
                 <p>All that's left to do is to apply the CameraMovement script to the camera and you can now see that the camera follows the player.</p>
                 <h2>Collisions and edge of map</h2>
                 <p>As you've probobly noticed in your testing playthroughs, you can now walk outside of the drawn game world. To fix that we're going to draw the collision tilemap around the edges. We've already created a Collision tile map and add a Tile map Collider 2D to it. So now instead of drawing on the Ground Tile map, select the Collision tile map and use the forest sprites to draw the borders. At this point we should address one more thing. Select the player and in the Rigidbody2D component go to Constraints and check the box for "Freeze Rotation" for the Z axis. I you want you can leave it unchecked and see the results.</p>
-                <img class="imagePixelArt" src="./images/blog/GettingStartedWithUnityCalendar.png" alt="Simple calendar Pixel Art">
-                <h2>Why Unity?</h2>
-                <p></p>
-                <img class="imagePixelArt" src="./images/blog/GettingStartedWithUnityDeskPC.png" alt="Desk with PC and a chair Pixel Art">
-                <p></p>
-                <p></p>
-                <h2></h2>
-                <p>In the next post we'll start-up Unity and I'll teach you how to start a project and we might even code our first functionality!</p>
+                <p>Now we want to limit the camera so it doesn't show the game world outside of the drawn world, since it looks funny that we can see beyond the playable area. To do that we're going to add a couple of things to our CameraMovement script. We're going to define two Vector2 variables one for a maximum position and one for the minimum position. Now we can use a Vector2 since we're only going to use the X and Y axis.</p>
+                <div class="codeSnippets">
+                    <pre>
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class CameraMovement : MonoBehaviour
+{
+    private Transform target;
+    [SerializeField]
+    private Vector2 maxPosition;
+    [SerializeField]
+    private Vector2 maxPosition;</pre>
+                </div>
+                <p>Then in the FixedUpdate method we want to limit the target Position variable we've set before, with the new variables and we'll do that by using "Mathf.Clamp" function. </p>
+                <div class="codeSnippets">
+                    <pre>
+private void FixedUpdate()
+    {
+        if (transform.position != target.position)
+        {
+            // We're going to use the position of the Z axis of the camera, since the camera has a value of -10 and the player
+            // has 0. The camera needs the negative value so it can capture the game world and objects.
+            Vector3 targetPosition = new Vector3(target.position.x, target.position.y, transform.position.z);
+            targetPosition.x = Mathf.Clamp(targetPosition.x, minPosition.x, maxPosition.x);
+            targetPosition.y = Mathf.Clamp(targetPosition.y, minPosition.y, maxPosition.y);
+
+            transform.position = Vector3.Lerp(transform.position, targetPosition, 1.0f)
+        }
+    }</pre>
+                </div>
+                <p>Now select the Main Camera game object and set the correct minPosition and maxPosition values for the camera. You can do that by selecting the camera and moving it around to the edges and using the values you see in the transform of the camera.</p>
+                <h2>Player animation and camera settings</h2>
+                <p>How to move the camera and how to create animations is a process you'll best see in a video. This post is long enough and putting the process to create animation into words would be too much. I suggest you check out my tutorial on Youtube so you can see how to do these things.</p>
                 <p>If you enjoyed and maybe learned something reading this, <a href="https://twitter.com/SideBucky"target="_blank">follow me on Twitter</a>, so you'll be notified when the next post is uploaded.</p>
-                <img class="imagePixelArt" src="./images/blog/GettingStartedWithUnityImage.png" style="width:100%" alt="Garage Pixel Art">
+                <p>You have probobly noticed, this tutorial was taken from my stream of <a href="https://www.twitch.tv/buckyside"target="_blank">Twitch</a> where you can come and join me, we have a lot of fun creating game and learning more about it. And if you're interested in game development check out my <a href="https://www.youtube.com/channel/UCi7eHWvpB9wFnbNONZ4L64g"target="_blank">YouTube channel</a> where you can find more videos about game development.
+                <h2>Final code</h2>
+                <p>PlayerMovement script</p>
+                <div class="codeSnippets">
+                    <pre>
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayerMovement : MonoBehaviour
+{
+    [SerializeField]
+    private float speed;
+
+    private Rigidbody2D playerRigidBody;
+    private Vector3 moveDirection;
+
+    private void Awake()
+    {
+        playerRigidBody = GetComponent&gtRigidbody2D&lt();
+    }
+
+    private void FixedUpdate()
+    {
+        playerRigidBody.velocity = new Vector3(moveDirection.x * speed, moveDirection.y * speed);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        float moveX = Input.GetAxisRaw("Horizontal");
+        float moveY = Input.GetAxisRaw("Vertical");
+
+        moveDirection = new Vector3(moveX, moveY, 0f).normalized;
+    }
+}</pre>
+                </div>
+                <p>CameraMovement script</p>
+                <div class="codeSnippets">
+                    <pre>
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class CameraMovement : MonoBehaviour
+{
+    private Transform target;
+    [SerializeField]
+    private Vector2 maxPosition;
+    [SerializeField]
+    private Vector2 maxPosition;
+
+    private void Awake()
+    {
+        target = GameObject.FindGameObjectWithTag("Player").transform;
+    }
+
+    private void FixedUpdate()
+    {
+        if (transform.position != target.position)
+        {
+            // We're going to use the position of the Z axis of the camera, since the camera has a value of -10 and the player
+            // has 0. The camera needs the negative value so it can capture the game world and objects.
+            Vector3 targetPosition = new Vector3(target.position.x, target.position.y, transform.position.z);
+            targetPosition.x = Mathf.Clamp(targetPosition.x, minPosition.x, maxPosition.x);
+            targetPosition.y = Mathf.Clamp(targetPosition.y, minPosition.y, maxPosition.y);
+
+            transform.position = Vector3.Lerp(transform.position, targetPosition, 1.0f)
+        }
+    }
+}</pre>
+                </div>
                 <br><br>
                 <div class="blog-navigation">
                     <a href="gamdev-blog-start-gamedev.html">PREVIOUS</a>
