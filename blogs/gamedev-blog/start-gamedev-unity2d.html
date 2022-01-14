@@ -101,6 +101,72 @@
                             <!-- Optional: Set a scope to limit where the snippet will trigger -->
                             <scope>source.C#</scope>
                 </code></div>
+                <div class="codeSnippets"><code>
+                    using System.Collections;
+                    using System.Collections.Generic;
+                    using UnityEngine;
+
+                    public class PlayerMovement : MonoBehaviour
+                    {
+                        [SerializeField]
+                        private float speed;
+
+                        private Rigidbody2D playerRigidBody;
+                        private Vector3 moveDirection;
+
+                        private void Awake()
+                        {
+                            playerRigidBody = GetComponent<Rigidbody2D>();
+                        }
+
+                        private void FixedUpdate()
+                        {
+                            playerRigidBody.velocity = new Vector3(moveDirection.x * speed, moveDirection.y * speed);
+                        }
+
+                        // Update is called once per frame
+                        void Update()
+                        {
+                            float moveX = Input.GetAxisRaw("Horizontal");
+                            float moveY = Input.GetAxisRaw("Vertical");
+
+                            moveDirection = new Vector3(moveX, moveY, 0f).normalized;
+                        }
+                    }
+                </code></div>
+                <div class="codeSnippets"><code>
+                    using System.Collections;
+                    using System.Collections.Generic;
+                    using UnityEngine;
+
+                    public class PlayerMovement : MonoBehaviour
+                    {
+                        [SerializeField]
+                        private float speed;
+
+                        private Rigidbody2D playerRigidBody;
+                        private Vector3 moveDirection;
+
+                        private void Awake()
+                        {
+                            playerRigidBody = GetComponent&gtRigidbody2D&lt();
+                        }
+
+                        private void FixedUpdate()
+                        {
+                            playerRigidBody.velocity = new Vector3(moveDirection.x * speed, moveDirection.y * speed);
+                        }
+
+                        // Update is called once per frame
+                        void Update()
+                        {
+                            float moveX = Input.GetAxisRaw("Horizontal");
+                            float moveY = Input.GetAxisRaw("Vertical");
+
+                            moveDirection = new Vector3(moveX, moveY, 0f).normalized;
+                        }
+                    }
+                </code></div>
                 <img class="imagePixelArt" src="../../images/blog/GettingStartedWithUnityCalendar.png" alt="Simple calendar Pixel Art">
                 <h2>Why Unity?</h2>
                 <p></p>
