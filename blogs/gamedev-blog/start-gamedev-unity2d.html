@@ -63,9 +63,43 @@
                 <p>The first is a method called "Awake". It's similar to the start method but it's executed before the Start method. I like using the Awake method when I'm setting variables, getting components and other similar tasks. However, before the methods let's create variables, one will be a float called "speed" and the other one will be a RigidBody2D, which will allow us manipulate the RigidBody2D inside our code. Variables can be "private" or "public" (same with methods or voids). If it's private it means it can only be used in this script and it also won't be visible in the inspector. If it's public it can be referenced and used in other methods/voids and it will be visible in the Inspector.</p>
                 <p>After the variables are completed, let's create the Awake method and assign the RigidBody2D component.</p>
                 <div class="codeSnippets">
-                    <p>void Awake(){</p>
-                    <p>    rigidBody2D = GetComponent.()"</p>
-                    <p>}</p>
+                    	<content><![CDATA[
+                        using System.Collections;
+                        using System.Collections.Generic;
+                        using UnityEngine;
+
+                        public class PlayerMovement : MonoBehaviour
+                        {
+                            [SerializeField]
+                            private float speed;
+
+                            private Rigidbody2D playerRigidBody;
+                            private Vector3 moveDirection;
+
+                            private void Awake()
+                            {
+                                playerRigidBody = GetComponent<Rigidbody2D>();
+                            }
+
+                            private void FixedUpdate()
+                            {
+                                playerRigidBody.velocity = new Vector3(moveDirection.x * speed, moveDirection.y * speed);
+                            }
+
+                            // Update is called once per frame
+                            void Update()
+                            {
+                                float moveX = Input.GetAxisRaw("Horizontal");
+                                float moveY = Input.GetAxisRaw("Vertical");
+
+                                moveDirection = new Vector3(moveX, moveY, 0f).normalized;
+                            }
+                        }
+                        ]]></content>
+                            <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+                            <!-- <tabTrigger>hello</tabTrigger> -->
+                            <!-- Optional: Set a scope to limit where the snippet will trigger -->
+                            <scope>source.C#</scope>
                 </div>
                 <img class="imagePixelArt" src="../../images/blog/GettingStartedWithUnityCalendar.png" alt="Simple calendar Pixel Art">
                 <h2>Why Unity?</h2>
