@@ -40,28 +40,30 @@
             <div class="blog">
                 <h5>13. jan. 2021</h5>
                 <p>The tutorial is written in a step by step process. If you're familiar with Unity or you're only interested in the code part, <b>you can skip to the end where you can find the snippet of entire code.</b></p>
+                <p>Some parts of this tutorial are easier to follow through video, so make sure to check out this tutorial in <a href="https://www.youtube.com/channel/UCi7eHWvpB9wFnbNONZ4L64g"target="_blank">my Youtube video</a>.(coming soon)</p>
                 <p>As we've discussed in the previous post, Unity is a very popular and capable game engine. In order to use it you have to download it first on there website, you can do that <a href="https://unity3d.com/get-unity/download"target="_blank">here</a>. Select the correct version for your PC and follow the instalation process (it's very easy and similar to any software install)</p>
                 <br>
                 <h2>How to start a project</h2>
                 <p>After you start Unity Hub, simply click on "new" and select the type of project you wish to create. We'll start with a 2D project since it's a bit simpler if you're a solo developer and completly new to game development. If you'd like to start a 3D project you can select that here. Then name your project and select where you want it to be saved. After that, click "create" and wait a bit for the project to load.</p>
                 <h2>Quick overview of the interface</h2>
-                <p>1) Tools to manipulate game objects - move them, resize and rotate them etc.</p>
-                <p>2) A menu of all game objects in your current scene, here is also the place to create new ones.</p>
-                <p>3) Menus for animation and grid manipulation (drawing, erasing etc).</p>
-                <p>4) Project folder, where you can create scripts, prefabs, scenes, materials and organise them in folders.</p>
-                <p>5) Game object settings, you can add components and then set them to the values you want.</p>
+                <p>1) A menu of all game objects in your current scene, here is also the place to create new ones.</p>
+                <p>2) Menus for animation and grid manipulation (drawing, erasing etc).</p>
+                <p>3) Project folder, where you can create scripts, prefabs, scenes, materials and organise them in folders.</p>
+                <p>4) Scene manager - grab game objects, draw Tilemaps, get an overview and most of the work gets done here</p>
+                <p>5) Inspector - Game object settings, you can add components and then set them to the values you want.</p>
                 <p>Don't worry, the interface will feel more familiar as soon as you start with some examples.</p>
                 <img class="imagePixelArt" style="width: 100%;"src="../../images/blog/start-gamedev-unity2d/unity-overview.png" alt="Unity interface Overview BuckySide">
                 <h2>Creating a player</h2>
                 <p>The first thing you need in order to create a player is a game object. In the Hierarchy area, right click and select "Create empty". Now you can name it "Player", so you'll always know which game object is the Player game object. Then go to the "Inspector" on the right and for the tag select "Player". You will soon find out why this is usefull.</p>
                 <p>Right now you still can't see the player, so let's change that. In the "Inspector" click add component and in the search area type "Sprite Renderer" and confirm it. This component allows us to use an image to represent the game object. If you have your own art you can use that, if not you can download my art <a href="https://drive.google.com/drive/folders/12BuzuW9ICOcpQmANkoqs6ppiOt9SWfI0?usp=sharing"target="_blank">here</a>. Now let's go to the "Project" area and let's right click and create a new folder, name it "Art". Then simply drag the art into Unity in the Art folder. Now click on the "tutorial-player-walk" image you've just imported and in the inspector select:</p>
-                <p>Sprite mode: Multiple</p>
-                <p>Pixels per Unity: 16</p>
-                <p>Filter mode: Point (no filter)</p>
-                <p>Compression: None</p>
+                <p>- Sprite mode: Multiple</p>
+                <p>- Pixels per Unity: 16</p>
+                <p>- Filter mode: Point (no filter)</p>
+                <p>- Compression: None</p>
                 </p>Then click "Apply" and after it's done click on the "Sprite Editor". Now select slice, grid by cell size and enter 16x32 - that's correct for the pixel art you've downloaded in this post, if you have different art, slice it based in the way it was created. Then click "Finish" and we're done with importing art for our player. Now let's once again click on the Player game object and select the little knob in the Sprite Renderer component (Sprite section) in the "Inspector". Now select a sprite, I ussualy just go with a front facing character, don't worry we'll add animations later and it won't be important.</p>
                 <img class="imagePixelArt" src="./images/blog/GettingStartedWithUnityToolbox.png" alt="Toolbox Pixel Art">
                 <p>The next thing we want to do is add more components to the Player game object, so we can make him move and interact with the game world. Let's add components (same way we did the Sprite Renderer), "BoxCollider2D" and "RigidBody2D". The "RigidBody2D" component will be used to move our character and the "BoxCollider2D" component will be used for our character to interact with the game world. For our example we'll use a 4-way directional movement, which is used in top-down games. In order to the that you should go to the inspector area and inside the "RigidBody2D" component set "Gravity Scale" to 0. This way gravity won't pull out player down. If you want for example a platformer, you can use gravity since you have 2-way directional movement with jumps for going up and gravity to pull you back down.</p>
+                <h2>Making the player move</h2>
                 <p>Now it's time for us to create our first script! Let's head to the project area and the same way we've created and Art folder before, we now create a "Scripts" folder. I ussualy create another folder called "Player" and put all of the player scripts in here, just to keep things organised. Then inside the folder right click and create a new C# script, you can name it "PlayerMovement". Open the script. There are two methods already created, a Start method and an Update method. A start method is excuted only once and that's at the start when the game object becomes active. The Update method is started after the Start method and is being continously exectued. There are a lot of other methods, which all function differently and can be used in different scenarios. We'll learn two other methods in this tutorial post.</p>
                 <p>The first is a method called "Awake". It's similar to the start method but it's executed before the Start method. I like using the Awake method when I'm setting variables, getting components and other similar tasks. However, before the methods let's create variables, one will be a float called "speed" and the other one will be named "playerRigidbody", which will allow us manipulate the RigidBody2D inside our code. Variables can be "private" or "public" (same with methods or voids). If it's private it means it can only be used in this script and it also won't be visible in the inspector. If it's public it can be referenced and used in other methods/voids and it will be visible in the Inspector. For speed we can set it to private and set the variable to [SerializeField]. This setting makes the variable visible in the Unity Inspector.</p>
                 <div class="codeSnippets">
@@ -86,7 +88,7 @@ public class PlayerMovement : MonoBehaviour
         playerRigidBody = GetComponent&ltRigidbody2D&gt();
     }</pre>
                 </div>
-                <p>Now that our code can access the Rigidbody2D component of out Player game object, we want to add velocity to the component. For that we're goind to use the "FixedUpdate" method. The difference between the Fixed update method and the Update method is that the Update method runs once per frame, while the Fixed update can run zero times, once or many times per frame. That's because it takes your frame rate into consideration. Now that we're assignig velocity to a game object it's better to do it in a Fixed update so that player with lower FPS won't have slower moving characters compared to player with a highier FPS.</p>
+                <p>Now that our code can access the Rigidbody2D component of out Player game object, we want to add velocity to the component. For that we're goind to use the "FixedUpdate" method. The difference between the Fixed update method and the Update method is that the Update method runs once per frame, while the Fixed update can run zero times, once or many times per frame. That's because it takes your frame rate into consideration. Now that we're assigning velocity to a game object it's better to do it in a Fixed update so that player with lower FPS won't have slower moving characters compared to player with a highier FPS.</p>
                 <p>To apply velocity to the Ridigdbody we'll use a Vector3 and and moveDirection variable we've set and multiply the X axis and Y axis value with speed. We don't have to worry about the Z axis as we're in a 2D space.</p>
                 <div class="codeSnippets">
                     <pre>
@@ -108,6 +110,15 @@ public class PlayerMovement : MonoBehaviour
         moveDirection = new Vector3(moveX, moveY, 0f).normalized;
     }</pre>
                 </div>
+                <p>And that's all the code we need to make our player move! Now select your player and add the script as a component in the Inspector. You can now set the speed to anything you want, play around with it and see what feels right. I've set mine to 5.</p>
+                <h2>Building the game world</h2>
+                <p>Now that we can move the player, we don't want to walk around in space as we currently are. So let's make a game world around the player!</p>
+                <p>In the Hierarchy area right click and go to 2D Object -> Tilemap -> Rectangular. We can rename the first Tilemap to "Ground". Now I suggest you duplicate it and you do that by selecting it, then press "Ctrl+D" and you can rename it to "Collision". You can also do that later, but there can be a collision issue that can be fixed by erasing blank Collision tiles that can get placed. But we're avoiding all of that by simply creating both right now. For the Collision tilemap, you want to add a component in the Inspector, called "Tilemap Collider 2D". You can leave all the settings in the component to the default values.</p>
+                <p>Now import the second art (tutorial-overworld.png) to Unity the same way you've imported the character, and them all of the same settings, except when you're slicing it Grid by cell size, set that to be 16x16. Now navigate in Unity to the bottom left side of the program and select "Tile Palette" tab. Click on "Create New Palette" and name it what you want and leave the rest of the settings default. When selecting where to save in the Windows Explorer, I ussualy navigate to the "Assets folder" (main one) and create a new folder and name it "Tile Palettes". Again this is just for organisation and it's really important once you're project gets bigger. Then grab the art in the Art folder (inside Unity) and drag it to the Tile map.</p>
+                <p>Above the Tile map you have tools to paint and erase sprites. Make sure you're currently painting on the "Ground" Tile map.</p>
+                <video width=100% controls>
+                    <source src="../../images/blog/start-gamedev-unity2d/tilemapsUnity.mp4" type="video/mp4">.
+                </video>
                 <img class="imagePixelArt" src="./images/blog/GettingStartedWithUnityCalendar.png" alt="Simple calendar Pixel Art">
                 <h2>Why Unity?</h2>
                 <p></p>
@@ -128,9 +139,9 @@ public class PlayerMovement : MonoBehaviour
     </body>
     <footer id="footer">
             <b>Socials:</b>
-            <a class="socials" href="https://www.youtube.com/channel/UCi7eHWvpB9wFnbNONZ4L64g"target="_blank"><img class="image" src="./images/youtube-icon.png" alt="Youtube icon" style="width:100%"></a>
-            <a class="socials" href="mailto:buckyside@gmail.com"><img class="image" src="./images/mail-icon.png" alt="Mail icon" style="width:100%"></a>
-            <a class="socials" href="https://twitter.com/SideBucky"><img class="image" src="./images/twitter-icon.png" alt="Twitter icon" style="width:100%"></a>
+            <a class="socials" href="https://www.youtube.com/channel/UCi7eHWvpB9wFnbNONZ4L64g"target="_blank"><img class="image" src="../../images/youtube-icon.png" alt="Youtube icon" style="width:100%"></a>
+            <a class="socials" href="mailto:buckyside@gmail.com"><img class="image" src="../../images/mail-icon.png" alt="Mail icon" style="width:100%"></a>
+            <a class="socials" href="https://twitter.com/SideBucky"><img class="image" src="../../images/twitter-icon.png" alt="Twitter icon" style="width:100%"></a>
     </footer>
     </div>
 </html>
