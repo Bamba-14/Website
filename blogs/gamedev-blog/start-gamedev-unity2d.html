@@ -64,37 +64,37 @@
                 <p>After the variables are completed, let's create the Awake method and assign the RigidBody2D component.</p>
                 <div class="codeSnippets">
                     <pre>
-                        using System.Collections;
-                        using System.Collections.Generic;
-                        using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-                        public class PlayerMovement : MonoBehaviour
-                        {
-                            [SerializeField]
-                            private float speed;
+public class PlayerMovement : MonoBehaviour
+{
+    [SerializeField]
+    private float speed;
 
-                            private Rigidbody2D playerRigidBody;
-                            private Vector3 moveDirection;
+    private Rigidbody2D playerRigidBody;
+    private Vector3 moveDirection;
 
-                            private void Awake()
-                            {
-                                playerRigidBody = GetComponent&gtRigidbody2D&lt();
-                            }
+    private void Awake()
+    {
+        playerRigidBody = GetComponent&gtRigidbody2D&lt();
+    }
 
-                            private void FixedUpdate()
-                            {
-                                playerRigidBody.velocity = new Vector3(moveDirection.x * speed, moveDirection.y * speed);
-                            }
+    private void FixedUpdate()
+    {
+        playerRigidBody.velocity = new Vector3(moveDirection.x * speed, moveDirection.y * speed);
+    }
 
-                            // Update is called once per frame
-                            void Update()
-                            {
-                                float moveX = Input.GetAxisRaw("Horizontal");
-                                float moveY = Input.GetAxisRaw("Vertical");
+    // Update is called once per frame
+    void Update()
+    {
+        float moveX = Input.GetAxisRaw("Horizontal");
+        float moveY = Input.GetAxisRaw("Vertical");
 
-                                moveDirection = new Vector3(moveX, moveY, 0f).normalized;
-                            }
-                        }
+        moveDirection = new Vector3(moveX, moveY, 0f).normalized;
+    }
+}
                     </pre>
                 </div>
                 <img class="imagePixelArt" src="../../images/blog/GettingStartedWithUnityCalendar.png" alt="Simple calendar Pixel Art">
