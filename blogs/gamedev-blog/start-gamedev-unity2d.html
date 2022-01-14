@@ -119,6 +119,45 @@ public class PlayerMovement : MonoBehaviour
                 <video width=100% controls>
                     <source src="../../images/blog/start-gamedev-unity2d/tilemapsUnity.mp4" type="video/mp4">.
                 </video>
+                <p>You can probobly no longer see the player, just the game world. That's because currently we have both the player and the Ground Tile Map on the same sorting layer and defined on the same order in layer. To fix this select the Player game object and on the component Sprite renderer in the Inspector set <b>"Order in layer" to 1</b>. This will make sure the player is always drawn above the game world</p>
+                <h2>Moving the camera</h2>
+                <p>If you try and play your game you'll quickly realize you want the camera to move with the player so you can explore more of the world. We'll create another script to do just that. I like to create another folder called "GeneralGame" for example in the Scripts folder and create a new C# script there, I'll name it CameraMovement.</p>
+                <p>First open the script and you can delete both the Start and Update method as we won't be using them. Now let's create a variable that will tell our script where our targer -> Player is. We're going to reference the Transform of the player since that's the component that holds positional values of the game object, I named it "target".</p>
+                <div class="codeSnippets">
+                    <pre>
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class CameraMovement : MonoBehaviour
+{
+    private Transform target;</pre>
+                </div>
+                <p>Now we want to set target and we'll do that in the awake method, it's very similar to what we did with Rigidbody2D, only here we'll find it by using a find function that utialises tags. Remember we've taged the Player game object as "Player"? That's going to come in handy now.</p>
+                <div class="codeSnippets">
+                    <pre>
+    private void Awake()
+    {
+        target = GameObject.FindGameObjectWithTag("Player").transform;
+    }</pre>
+                </div>
+                <p>Great, the camera now know where the player is. All that there is left is to check if the position of player is not the same as the position of the camera and if that's the case move the camera to the player position. We'll once again use the FixedUpdate method for the same reasons as before.</p>
+                <div class="codeSnippets">
+                    <pre>
+    private void FixedUpdate()
+    {
+        if (transform.position != target.position)
+        {
+            // We're going to use the position of the Z axis of the camera, since the camera has a value of -10 and the player
+            // has 0. The camera needs the negative value so it can capture the game world and objects.
+            Vector3 targetPosition = new Vector3(target.position.x, target.position.y, transform.position.z);
+            transform.position = Vector3.Lerp(transform.position, targetPosition, 1.0f)
+        }
+    }</pre>
+                </div>
+                <p>All that's left to do is to apply the CameraMovement script to the camera and you can now see that the camera follows the player.</p>
+                <h2>Collisions and edge of map</h2>
+                <p>As you've probobly noticed in your testing playthroughs, you can now walk outside of the drawn game world. To fix that we're going to draw the collision tilemap around the edges. We've already created a Collision tile map and add a Tile map Collider 2D to it. So now instead of drawing on the Ground Tile map, select the Collision tile map and use the forest sprites to draw the borders. At this point we should address one more thing. Select the player and in the Rigidbody2D component go to Constraints and check the box for "Freeze Rotation" for the Z axis. I you want you can leave it unchecked and see the results.</p>
                 <img class="imagePixelArt" src="./images/blog/GettingStartedWithUnityCalendar.png" alt="Simple calendar Pixel Art">
                 <h2>Why Unity?</h2>
                 <p></p>
