@@ -38,3 +38,14 @@ function carousel3() {
   x[slideIndex3-1].style.display = "block";
   setTimeout(carousel3, 2000); // Change image every 2 seconds
 }
+function carousel4() {
+  var i;
+  var x = document.getElementsByClassName("slidesLP");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex4++;
+  if (slideIndex4 > x.length) {slideIndex4 = 1}
+  x[slideIndex4-1].style.display = "block";
+  setTimeout(carousel4, 2000); // Change image every 2 seconds
+}
