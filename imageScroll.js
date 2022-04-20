@@ -1,9 +1,11 @@
 var slideIndex1 = 0;
 var slideIndex2 = 0;
 var slideIndex3 = 0;
+var slideIndex4 = 0;
 carousel1();
 carousel2();
 carousel3();
+carousel4();
 
 function carousel1() {
   var i;
