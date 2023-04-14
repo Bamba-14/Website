@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+            <meta name="description" content="Free the Pets! game site">
+            <meta name="author" content="BuckySide">
+            <link rel="icon" type="image/png" href="./images/Mr. BuckySide.png"/>
+            <link rel="stylesheet" href="./style.css">
+	    <!-- fonts -->
+            <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto:300,400,700" rel="stylesheet">
+            <script type="text/javascript">
+			<!--
+			var unityObjectUrl = "http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js";
+			if (document.location.protocol == 'https:')
+			    unityObjectUrl = unityObjectUrl.replace("http://", "https://ssl-");
+			document.write('<script type="text/javascript" src="' + unityObjectUrl + '"></script>');
+			-->
+			</script>
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-49E46GXHL0"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-49E46GXHL0');
+            </script>
+
+            <title>BuckySide Free the Pets! game site</title>
+    <div id="container">
+        </head>
+    	<section id="home">
+    		<div class="menu">
+    			<a href="index.html">Home</a>
+                <a href="/blogs/blogs.html">Blogs</a>
+                <a href="bodyframe.html">BodyFrame</a>
+                <a href="games.html">Games</a>
+    		</div>
+        </head>
+        <body>
+            <div id="wrap">
+                <div class="title">
+                    <h1>Free the pets!</h1>
+                </div>
+                <div class="main">
+                    <p><b>When and how can you play?</b></p>
+                    <p>The game is releasing on Android and iOS sometime in the first half of 2023. After the release it will receive updates - fixes and content.</p>
+                    <p><b>What is the game about?</b></p>
+                    <p>There's a bit of a story element to the game with your goal being saving as many pets as you can. The gameplay is easy to master and the challenges are never ending. It's the perfect game if you're waiting for an appointment, need to relax or you know... taking a number two.</p>
+                    <p><b>Why NO ADS?</b></p>
+                    <p>Noone likes ads and they don't belong in games - that's my opinion. I'll be estatic if people can enjoy my game and the best way to do it is ad free. If you'd like to support me besides being awesome and playing my game - a review will go a long way and there's a store where you can purchase cosmetics. I'm working hard on making them look and feel awesome so hopefully they're worth it. (Hopefully this makes it into the game)</p>
+                    <p><b>My first published game</b></p>
+                    <p>I'm working on a couple of games that I'm planing to release on PC, but this is my first finished product. That's why I would appreciate any feedback and you can always support me by taking a look at my social media <b>(socials are bellow).</b> </p>
+                </div>
+                <div class="main">
+                    <p><b>A march through history</b></p>
+                    <p>If you can't wait that long to play it, you can play the browser version bellow. <b>Keep in mind that this is a year and a half old version and does not reflect the current game.</b> If you're interested in the progress of the mobile version follow me on Twitter or join the Discord Server. <b>(socials are bellow).</b></p>
+                    <p><b>Goal of the game:</b></p>
+                    <p>The squares represent the animals lost in the wilderness.The number tells you how many treats the animals need to return to you and the color changes the closer you get to regaining the pets trust. Save as many animals as you can!</p>
+                    <p><b>How the game works:</b></p>
+                    <p>At the bottom of the game screen, you can see the amount of pets you've saved as well as the amount of treats you've already fed the animals. Each new row of animals that appears will require more treats for you to feed. But don't worry, you get an extra treat each round. Also keep in mind there is level progression in the game. For example, when you save 35 pets, you advance to level 2, where each round two new roads of pets will spawn. You'll recieve an indicator in the bottom right corner, where your pet will notify you of the level up.</p>
+                    <p><b>Instructions for the game:</b></p>
+                    <p>Use your mouse to drag and draw a line where you want to fire your treats, release the button, when ready. The treats will bounce of the animals, once they hit the bottom, they will return and refill the treats you have to feed the animals again.</p>
+                    <p><b>Warning!</b></p>
+                    <p>The game is not optmised for mobile devices, so please play it on PC. <b>If you like the game and would like to play it on mobile let me know (socials are bellow).</b> </p>
+                </div>
+                <div class="main">
+                    <iframe src="https://www.buckyside.com/savethepets/index.html" style="border:0px #000000 none;" name="Save the Pets" scrolling="no" frameborder="1" height="647px" width="370.5px" float:right></iframe>
+                </div>
+            </div>
+        </body>
+        <footer id="footer">
+            <b>Socials:</b>
+            <a class="socials" href="https://discord.gg/sNj897tNdE"><img class="image" src="./images/discord-icon.png" alt="Discord icon" style="width:100%"></a>
+	    <a class="socials" href="https://www.twitch.tv/buckyside"><img class="image" src="./images/twitch-icon.png" alt="Twitch icon" style="width:100%"></a>
+            <a class="socials" href="https://www.youtube.com/channel/UCi7eHWvpB9wFnbNONZ4L64g"target="_blank"><img class="image" src="./images/youtube-icon.png" alt="Youtube icon" style="width:100%"></a>
+            <a class="socials" href="mailto:buckyside@gmail.com"><img class="image" src="./images/mail-icon.png" alt="Mail icon" style="width:100%"></a>
+            <a class="socials" href="https://twitter.com/SideBucky"><img class="image" src="./images/twitter-icon.png" alt="Twitter icon" style="width:100%"></a>
+
+        </footer>
+    </div>
+</html>
