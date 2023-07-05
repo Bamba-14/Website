@@ -1,0 +1,16 @@
+{
+"companyName": "BuckySide",
+"productName": "Suspenders Joe",
+"productVersion": "0.2",
+"dataUrl": "Suspenders Joe WebGL.data.unityweb",
+"wasmCodeUrl": "Suspenders Joe WebGL.wasm.code.unityweb",
+"wasmFrameworkUrl": "Suspenders Joe WebGL.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.6f1"
+}
