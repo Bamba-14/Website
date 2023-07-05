@@ -1,25 +1,28 @@
 *{
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
 }
 :root {
-	--jumpObstacle1-box-shadow-color:#52C8EE;
+	--jumpObstacle1-box-shadow-color:#f5b5126e;
+    overflow-x: hidden;
 }
 body {
-	background-color: #383738;
-	color: white;
+	background-color: #ddddd8;
+	color: #131313;
 	font-family: Consolas,monaco,monospace;
+    overflow-x: hidden;
 }
 .jumpGame{
     width: 1000px;
     height: 305px;
     margin: auto;
+    overflow-x: hidden;
 }
 .jumpGame{
     width: 1000px;
     height: 405px;
     margin: auto;
+    overflow-x: hidden;
 }
 #jumpGameTitle{
     height: 25px;
@@ -29,13 +32,16 @@ body {
     overflow: hidden;
     white-space: nowrap;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 .startJumpGameTitle{
     color: transparent;
+    overflow-x: hidden;
 }
 .animateStartText{
-    color: white;
+    color: #131313;
     animation: typing 3.5s steps(144, end);
+    overflow-x: hidden;
 }
 @keyframes typing{
     from { width: 0 }
@@ -47,6 +53,7 @@ body {
     margin: auto;
     float: left;
 	background-image: url("https://github.com/Bamba-14/Website/blob/main/images/jumpBackgroundBlack.png?raw=true");
+    overflow-x: hidden;
 }
 #jumpLight{
     width: 80px;
@@ -55,7 +62,7 @@ body {
     position: relative;
 }
 .turnOnLight{
-    background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);
+    background:radial-gradient(farthest-side at bottom,#f5b5126e ,#0000);
     -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);
 }
 .lightFlickering{
@@ -63,44 +70,44 @@ body {
 }
 
 @keyframes jumpLightBlink{
-    0%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:1.0;
+    0%{background:radial-gradient(farthest-side at bottom,#f5b5126e ,#0000);opacity:1.0;
     -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
-    48%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:1.0;
+    48%{background:radial-gradient(farthest-side at bottom,#f5b5126e ,#0000);opacity:1.0;
     -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
-    49%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:0.3;
+    49%{background:radial-gradient(farthest-side at bottom,#f5b5126e ,#0000);opacity:0.3;
     -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
-    50%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:1.0;
+    50%{background:radial-gradient(farthest-side at bottom,#f5b5126e ,#0000);opacity:1.0;
     -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
-    51%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:0.3;
+    51%{background:radial-gradient(farthest-side at bottom,#f5b5126e ,#0000);opacity:0.3;
     -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
-    52%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:1.0;
+    52%{background:radial-gradient(farthest-side at bottom,#f5b5126e ,#0000);opacity:1.0;
     -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
-    100%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:1.0;
+    100%{background:radial-gradient(farthest-side at bottom,#f5b5126e ,#0000);opacity:1.0;
     -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
 }
 .lightStartTurnOn{
     animation: jumpLightStartBlink 2s 1 linear;
 }
 @keyframes jumpLightStartBlink{
-    10%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:0.1;
+    10%{background:radial-gradient(farthest-side at bottom,#f5b5126e ,#0000);opacity:0.1;
     -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
-    20%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:0.5;
+    20%{background:radial-gradient(farthest-side at bottom,#f5b5126e ,#0000);opacity:0.5;
     -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
-    30%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:0.9;
+    30%{background:radial-gradient(farthest-side at bottom,#f5b5126e ,#0000);opacity:0.9;
     -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
-    40%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:1.0;
+    40%{background:radial-gradient(farthest-side at bottom,#f5b5126e ,#0000);opacity:1.0;
     -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
-    50%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:0.5;
+    50%{background:radial-gradient(farthest-side at bottom,#f5b5126e ,#0000);opacity:0.5;
     -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
-    60%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:0.8;
+    60%{background:radial-gradient(farthest-side at bottom,#f5b5126e ,#0000);opacity:0.8;
     -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
-    70%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:0.3;
+    70%{background:radial-gradient(farthest-side at bottom,#f5b5126e ,#0000);opacity:0.3;
     -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
-    80%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:0.8;
+    80%{background:radial-gradient(farthest-side at bottom,#f5b5126e ,#0000);opacity:0.8;
     -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
-    90%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:0.7;
+    90%{background:radial-gradient(farthest-side at bottom,#f5b5126e ,#0000);opacity:0.7;
     -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
-    100%{background:radial-gradient(farthest-side at bottom,#52C8EE ,#0000);opacity:1.0;
+    100%{background:radial-gradient(farthest-side at bottom,#f5b5126e ,#0000);opacity:1.0;
     -webkit-mask:conic-gradient(from -90deg at bottom,#0000, #000 1deg 180deg, #0000 91deg);}
 }
 #jumpPlayer{
@@ -111,7 +118,7 @@ body {
     top: 50px;
     left: 15px;
     border-radius: 50%;
-    /*box-shadow: 50px -100px 100px #52C8EE;*/
+    /*box-shadow: 50px -100px 100px #f5b5126e;*/
 }
 @keyframes spinBall {
     100% {transform: rotate(360deg);}
@@ -141,7 +148,7 @@ body {
 }
 
 #jumpObstacle1{
-    background-color: #52C8EE;
+    background-color: #f5b5126e;
     width: 20px;
     height: 20px;
     position: relative;
@@ -155,7 +162,7 @@ body {
     100%{left: -20px;}
 }
 #jumpObstacle2{
-    background-color: #52C8EE;
+    background-color: #f5b5126e;
     width: 10px;
     height: 10px;
     position: relative;
@@ -216,10 +223,10 @@ p{
     color: transparent;
 }
 .visibleSessionScore{
-    color: #52C8EE;
+    color: #131313;
 }
 .button {
-  background-color: #52C8EE;
+  background-color: #131313;
   border: none;
   color: white;
   padding: 15px 32px;

@@ -11,6 +11,7 @@
             <link rel="stylesheet" href="./style.css">
         <!-- fonts -->
             <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto:300,400,700" rel="stylesheet">
+            <script src="https://kit.fontawesome.com/5ba52ab842.js" crossorigin="anonymous"></script>
             <script type="text/javascript">
             <!--
             var unityObjectUrl = "http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js";
@@ -29,45 +30,45 @@
               gtag('config', 'G-49E46GXHL0');
             </script>
     <link rel="stylesheet" href="./gamelounge/gameLoungeStyle.css">
+</head>
 <div id="container">
-        </head>
         <section id="home">
             <div class="menu">
                 <a href="index.html">Home</a>
                 <a href="/blogs/blogs.html">Blogs</a>
-                <a href="bodyframe.html">BodyFrame</a>
                 <a href="games.html">Games</a>
             </div>
-        </head>
-        <body>
-        <div id="wrap">
-            <br>
-            <title>Jump game</title>
-            <br>
-            <p>I made this game in JavaScript as a learning experience. It's far from perfect but I feel like it works well enough to be played and have fun.</p>
-            <br>
-            <br>
-            <!-- Platform Game -->
-            <div id="platformGame">
-                <div id="platformGameControls">
-                    <button class="button" onclick="loadLevel1()"><span id="platformGameLevel1"></span></button>
-                    <button class="button" onclick="loadLevel2()"><span id="platformGameLevel2"></span></button>
-                    <button class="button" onclick="loadLevel3()"><span id="platformGameLevel3"></span></button>
-                    <button class="button" onclick="loadLevel4()"><span id="platformGameLevel4"></span></button>
-                    <button class="button" onclick="loadLevel5()"><span id="platformGameLevel5"></span></button>
+            <body>
+                <div id="wrap">
+                    <br>
+                    <title>Platformer game</title>
+                    <br>
+                    <p>I made this game in JavaScript as a learning experience. It's far from perfect but I feel like it works well enough to be played and have fun.</p>
+                    <br>
+                    <br>
+                    <!-- Platform Game -->
+                    <div id="platformGame">
+                        <div id="platformGameControls">
+                            <button class="button" onclick="loadLevel1()"><span id="platformGameLevel1"></span></button>
+                            <button class="button" onclick="loadLevel2()"><span id="platformGameLevel2"></span></button>
+                            <button class="button" onclick="loadLevel3()"><span id="platformGameLevel3"></span></button>
+                            <button class="button" onclick="loadLevel4()"><span id="platformGameLevel4"></span></button>
+                            <button class="button" onclick="loadLevel5()"><span id="platformGameLevel5"></span></button>
+                        </div>
+                        <canvas width=1280 height=720 id="gameCanvas"></cavas>
+                    </div>
                 </div>
-                <canvas width=1280 height=720 id="gameCanvas"></cavas>
-            </div>
-        </div>
-    </div>
-   </body>
-    <footer id="footer">
+            </body>
+        <footer id="footer">
             <b>Socials:</b>
-        <a class="socials" href="https://www.twitch.tv/buckyside"><img class="image" src="./images/twitch-icon.png" alt="Twitch icon" style="width:100%"></a>
-            <a class="socials" href="https://www.youtube.com/channel/UCi7eHWvpB9wFnbNONZ4L64g"target="_blank"><img class="image" src="./images/youtube-icon.png" alt="Youtube icon" style="width:100%"></a>
-            <a class="socials" href="mailto:buckyside@gmail.com"><img class="image" src="./images/mail-icon.png" alt="Mail icon" style="width:100%"></a>
-            <a class="socials" href="https://twitter.com/SideBucky"><img class="image" src="./images/twitter-icon.png" alt="Twitter icon" style="width:100%"></a>
+            <a class="socials" href="https://www.twitch.tv/buckyside" target="_blank"><i class="fa-brands fa-twitch fa-xl" style="color: #131313;"></i></a>
+            <a class="socials" href="https://discord.gg/sNj897tNdE" target="_blank"><i class="fa-brands fa-discord fa-xl" style="color: #131313;"></i></a>
+            <a class="socials" href="mailto:buckyside@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-xl" style="color: #131313;"></i></a>
+            <a class="socials" href="https://www.youtube.com/channel/UCi7eHWvpB9wFnbNONZ4L64g" target="_blank"><i class="fa-brands fa-youtube fa-xl" style="color: #131313;"></i></a>
+            <a class="socials" href="https://twitter.com/SideBucky" target="_blank"><i class="fa-brands fa-twitter fa-xl" style="color: #131313;"></i></a>
         </footer>
+    </section>
+</div>
 <script src="./gamelounge/platformGameScript.js"></script>
 <script src="./gamelounge/jumpScript.js"></script>
 </html>

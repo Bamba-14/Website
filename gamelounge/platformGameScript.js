@@ -38,7 +38,7 @@ window.onload = function(){
 	canvas = document.getElementById("gameCanvas");
 	context = canvas.getContext("2d");
 	context.font = "30px Consolas";
-	context.fillStyle = "white";
+	context.fillStyle = "#131313";
 	context.textAlign = "center";
 	context.fillText("Welcome to BuckySide's simple platform game.", canvas.width/2, canvas.height/6);
 	context.fillText("Choose a level above, I suggest you play them from 1 to 5", canvas.width/2, canvas.height/3);
@@ -307,7 +307,7 @@ function endLevel(){
 	context = canvas.getContext("2d");
 	context.clearRect(0, 0, 1280, 720);
 	context.font = "30px Consolas";
-	context.fillStyle = "white";
+	context.fillStyle = "#131313";
 	context.textAlign = "center";
 	//context.fillText("Congratulations, you've finished the level! On to the next one.", canvas.width/2, canvas.height/2);
 	words = "Congratulations, you've finished the level! On to the next one."
@@ -327,7 +327,7 @@ function endLevelDeath(){
 	context = canvas.getContext("2d");
 	context.clearRect(0, 0, 1280, 720);
 	context.font = "30px Consolas";
-	context.fillStyle = "white";
+	context.fillStyle = "#131313";
 	context.textAlign = "center";
 	//context.fillText("Congratulations, you've finished the level! On to the next one.", canvas.width/2, canvas.height/2);
 	words = "You should avoid the green balls! Level failed."
@@ -431,7 +431,7 @@ function drawLevelText() {
 	var pause = 50;
 	var chars;
 	context.font = "30px Consolas";
-	context.fillStyle = "white";
+	context.fillStyle = "#131313";
 	context.textAlign = "center";
 	count ++;
 	chars = words.substr(0, count);
@@ -661,7 +661,7 @@ function drawLevelText() {
 	var pause = 50;
 	var chars;
 	context.font = "30px Consolas";
-	context.fillStyle = "white";
+	context.fillStyle = "#131313";
 	context.textAlign = "center";
 	count ++;
 	chars = words.substr(0, count);

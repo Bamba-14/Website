@@ -1,15 +1,14 @@
 .title {
-	color: #52C8EE;
+	color: #131313;
 	margin-left: 23%;
 	font-family: 'Oswald', sans-serif;
  	text-transform: uppercase;
 	font-size: 30px;
 }
 body {
-	background: #383738;
-	background: linear-gradient(0deg, rgba(56,55,56,1) 0%, rgba(74,73,74,1) 85%);
+	background: #ddddd8;
 	/*background-color: #383738;*/
-	color: white;
+	color: #131313;
 	/*font-family: Consolas,monaco,monospace;*/
 	font-family: 'Roboto', sans-serif;
  	font-weight: 400;
@@ -28,8 +27,7 @@ body {
 	text-align: center;
 	font-size: 35px;
 	font-family: 'Oswald', sans-serif;
-	width: 500px;
-	background: rgba(255, 255, 255, 0.1);
+	width: 100%;
 	border-radius: 15px;
 	padding: auto;
 }
@@ -43,7 +41,7 @@ a.menu{
   height: 2px;
   bottom: -8px;
   left: 0;
-  background-color: #FFF;
+  background-color: #131313;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out;
@@ -91,7 +89,7 @@ a.menu{
 	text-align-last: left;
 }
 .blog h2 {
-	color: #52C8EE;
+	color: #131313;
 	text-align: left;
 	margin-left: 3%;
 	font-family: 'Oswald', sans-serif;
@@ -99,7 +97,7 @@ a.menu{
 	font-size: 27px;
 }
 .blog h5 {
-	color: #fff;
+	color: #131313;
 	text-align: left;
 	margin-left: 0%;
 	font-size: 15px;
@@ -107,7 +105,7 @@ a.menu{
 	font-weight: 200;
 }
 .titleblog {
-	color: #52C8EE;
+	color: #131313;
 	text-align: center;
 	font-family: 'Oswald', sans-serif;
  	text-transform: uppercase;
@@ -165,7 +163,7 @@ a.menu{
 }
 .games-container .games-card .games-content h2
 {
-	color: #52C8EE;
+	color: #131313;
 	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase;
 	margin: auto;
@@ -241,7 +239,7 @@ a.menu{
 	max-width: 1200px;
 	flex-wrap: wrap;
 	z-index: 1;
-	maring: auto;
+	margin: auto;
 }
 .blogs-container .blogs-card:hover .blogs-content
 {
@@ -249,7 +247,7 @@ a.menu{
 }
 .blogs-container .blogs-card .blogs-content h2
 {
-	color: #52C8EE;
+	color: #131313;
 	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase;
 	margin: auto;
@@ -281,7 +279,7 @@ a.menu{
 .blog-navigation{
 	}
 .blog-navigation a:link {
-	color: #52C8EE;
+	color: #f5b512;
 	text-decoration: none;
 	font-family: 'Oswald', sans-serif;
 	font-size: 20px;
@@ -289,7 +287,7 @@ a.menu{
 	padding-top: 10px;
 }
 .blog-navigation a:visited {
-	color: #52C8EE;
+	color: #f5b512;
 	text-decoration: none;
 	font-family: 'Oswald', sans-serif;
 	font-size: 20px;
@@ -312,7 +310,7 @@ a.menu{
 .codeSnippets {
   border-radius: 12px;
   padding: 20px;
-  border: 2px solid #52C8EE;
+  border: 2px solid #f5b512;
   width: 100%;
   font-size: 14px;
   font-family: Consolas, monaco, monospace;
@@ -364,7 +362,7 @@ a.menu{
 }
 .bodyframe-container .bodyframe-card .bodyframe-content h2
 {
-	color: #52C8EE;
+	color: #f5b512;
 	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase;
 	margin: auto;
@@ -372,7 +370,7 @@ a.menu{
 }
 #footer {
 	font-family: 'Oswald', sans-serif;
-	color: #52C8EE;
+	color: #131313;
 	position: absolute;
 	bottom: 10px;
 	font-size: 25px;
@@ -406,7 +404,7 @@ a.socials:before {
   height: 2px;
   bottom: -8px;
   left: 10px;
-  background-color: #52C8EE;
+  background-color: #131313;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out;
@@ -416,11 +414,11 @@ a.socials:hover:before {
   transform: scaleX(1);
 }
 .socials:hover .image {
-  background: #52C8EE;
+  background: #131313;
 }
 /* links */
 .menu a:link {
-	color: #52C8EE;
+	color: #131313;
 	text-decoration: none;
 	font-family: 'Oswald', sans-serif;
 	font-size: 35px;
@@ -428,21 +426,21 @@ a.socials:hover:before {
 	padding: 10px;
 }
 .menu a:visited {
-	color: #52C8EE;
+	color: #131313;
 	text-decoration: none;
 	font-family: 'Oswald', sans-serif;
 	font-size: 35px;
 	padding: 10px;
 }
 .menu a:hover {
-  color: white;
+  color: #131313;
   text-decoration: none;
   font-family: 'Oswald', sans-serif;
   font-size: 35px;
   padding: 10px;
 }
 .menu a:active {
-  color: white;
+  color: #131313;
   text-decoration: none;
   font-family: 'Oswald', sans-serif;
   font-size: 35px;
@@ -541,49 +539,80 @@ a.socials:hover:before {
 }
 /* links for mid-text in blog */
 .blog a:link {
-	color: lightblue;
+	color: #131313;
 	text-decoration: none;
 	font-weight: bold;
 }
 .blog a:visited {
-	color: lightblue;
+	color: #131313;
 	text-decoration: none;
 	font-weight: bold;
 }
 .blog a:hover {
-	color: #EBECF8;
+	color: #505050;
 	text-decoration: none;
 	font-weight: bold;
 }
 .blog a:active {
-	color: #EBECF8;
+	color: #131313;
 	text-decoration: none;
 	font-weight: bold;
 }
 /* links for main */
 .main a:link {
-	color: lightblue;
+	color: #131313;
 	text-decoration: none;
 	font-weight: bold;
 }
 .main a:visited {
-	color: lightblue;
+	color: #131313;
 	text-decoration: none;
 	font-weight: bold;
 }
 .main a:hover {
-	color: #EBECF8;
+	color: #505050;
 	text-decoration: none;
 	font-weight: bold;
 }
 .main a:active {
-	color: #EBECF8;
+	color: #131313;
 	text-decoration: none;
 	font-weight: bold;
 }
   /* For mobile phones: */
 @media only screen and (max-width:1280px) {
-  .main, .rowf, .blogs, .blog {
+	.img-main-logo{
+		width: 5rem;
+		margin-left: -1rem;
+	}
+	.content h1{
+		font-size: 2rem;
+		margin-right: 0rem;
+		text-align: right;
+		margin-bottom: -1rem;
+	}  
+	.content h2{
+		font-size: 1.1rem;
+		text-align: right;
+		margin-bottom: -0.5rem;
+	}
+	.content h3{
+		font-size: 0.8rem;
+		text-align: right;
+		margin-bottom: -0.5rem;
+		font-weight: 300;
+	}
+	.home-inspirational {
+		font-size: 0.8rem;
+	}
+	#footer {
+		left: 0%;
+	}
+	.youtube-video{
+		width: 300px;
+		height: 168.75px;
+	}
+	.main, .rowf, .blogs, .blog {
     width:90%;
     margin-left: 3%;
 	margin-right: 3%;
@@ -726,6 +755,10 @@ a.socials:hover:before {
     margin-left: 4%;
     margin-right: 5%;
   }
+  .youtube-video{
+	width: 400px;
+	height: 225px;
+}
   .column {
   float: left;
   width: 49%;

@@ -1,5 +1,5 @@
 // function([string1, string2],target id,[color1,color2])    
- consoleText(['“A game is the complete exploration of freedom within a restrictive environment.” – Vineet Raj Kapoor', '“Games were not just a diversion, I realized. Games could make you feel.” – Sid Meier', '“Games have so much freedom. you can go anywhere you want.” – Jeneva Chen'], 'text',['tomato','mediumorchid','lightblue']);
+ consoleText(['“A game is the complete exploration of freedom within a restrictive environment.” – Vineet Raj Kapoor', '“Games were not just a diversion, I realized. Games could make you feel.” – Sid Meier', '“Games have so much freedom. you can go anywhere you want.” – Jeneva Chen'], 'text',['#131313']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];

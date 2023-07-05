@@ -1,18 +1,94 @@
+.container1 {
+	display: flex;
+	justify-content: left;
+	padding-top: 2rem;
+	padding-bottom: 5rem;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+.container2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: right;
+	width: 100%;
+}
+
+.item {
+	color: #131313;
+	width: 100%;
+}
+
+.content {
+	display: flex;
+	justify-content: left;
+	height: 100%;
+	width: 100%;
+}
+
+.img-main-logo{
+	width: 10rem;
+}
+
+.content h1{
+	font-size: 4rem;
+	margin-right: 0rem;
+	text-align: right;
+	margin-bottom: -1rem;
+}  
+.content h2{
+	font-size: 2rem;
+	text-align: right;
+	margin-bottom: -0.5rem;
+}
+.content h3{
+	font-size: 1rem;
+	text-align: right;
+	margin-bottom: -0.5rem;
+	font-weight: 300;
+}
+
+.home-png{
+	width: 1rem;
+	height: auto;
+	justify-content: left;
+}
+.home-png-anim{
+	animation: glitch 0.2s 0.2s 2;
+}
+.youtube-video{
+	width: 600px;
+	height: 337.5px;
+}
+
+
+.home-inspirational {
+	font-family: 'Oswald', sans-serif;
+	font-size: 1rem;
+	text-align:right;
+	height: 10%;
+	position: relative;
+	top: 5vh;
+	height: 3rem;
+}
+.home-inspirational-underscore{
+	display:inline-block;
+	position:relative;
+	left:1px;
+}
+
 .title {
-	color: #52C8EE;
+	color: #131313;
 	margin-left: 23%;
 	font-family: 'Oswald', sans-serif;
  	text-transform: uppercase;
 	font-size: 30px;
 }
 body {
-	background: #383738;
-	background: linear-gradient(0deg, rgba(56,55,56,1) 0%, rgba(74,73,74,1) 85%);
-	/*background-color: #383738;*/
-	color: white;
+	color: #131313 ;
 	/*font-family: Consolas,monaco,monospace;*/
 	font-family: 'Roboto', sans-serif;
  	font-weight: 400;
+	background-color: #ddddd8;
 }
 #container {
 	position: relative;
@@ -28,8 +104,7 @@ body {
 	text-align: center;
 	font-size: 35px;
 	font-family: 'Oswald', sans-serif;
-	width: 500px;
-	background: rgba(255, 255, 255, 0.1);
+	width: 100%;
 	border-radius: 15px;
 	padding: auto;
 }
@@ -43,7 +118,7 @@ a.menu{
   height: 2px;
   bottom: -8px;
   left: 0;
-  background-color: #FFF;
+  background-color: #131313;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out;
@@ -91,7 +166,7 @@ a.menu{
 	text-align-last: left;
 }
 .blog h2 {
-	color: #52C8EE;
+	color: #131313;
 	text-align: left;
 	margin-left: 3%;
 	font-family: 'Oswald', sans-serif;
@@ -99,7 +174,7 @@ a.menu{
 	font-size: 27px;
 }
 .blog h5 {
-	color: #fff;
+	color: #131313;
 	text-align: left;
 	margin-left: 0%;
 	font-size: 15px;
@@ -107,23 +182,11 @@ a.menu{
 	font-weight: 200;
 }
 .titleblog {
-	color: #52C8EE;
+	color: #131313;
 	text-align: center;
 	font-family: 'Oswald', sans-serif;
  	text-transform: uppercase;
 	font-size: 30px;
-}
-.slides {
-	display:none;
-}
-.slidesJ {
-	display:none;
-}
-.slidesSA {
-	display:none;
-}
-.slidesLP {
-	display:none;
 }
 /* Games section*/
 .games-container
@@ -140,8 +203,8 @@ a.menu{
 .games-container .games-card
 {
 	position: relative;
-	width: 400px;
-	height: 550px;
+	width: 250px;
+	height: 400px;
 	margin: 30px;
 	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
 	border-radius: 15px;
@@ -168,7 +231,7 @@ a.menu{
 }
 .games-container .games-card .games-content h2
 {
-	color: #52C8EE;
+	color: #131313;
 	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase;
 	margin: auto;
@@ -244,7 +307,7 @@ a.menu{
 	max-width: 1200px;
 	flex-wrap: wrap;
 	z-index: 1;
-	maring: auto;
+	margin: auto;
 }
 .blogs-container .blogs-card:hover .blogs-content
 {
@@ -252,7 +315,7 @@ a.menu{
 }
 .blogs-container .blogs-card .blogs-content h2
 {
-	color: #52C8EE;
+	color: #f5b512;
 	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase;
 	margin: auto;
@@ -284,7 +347,7 @@ a.menu{
 .blog-navigation{
 	}
 .blog-navigation a:link {
-	color: #52C8EE;
+	color: #131313;
 	text-decoration: none;
 	font-family: 'Oswald', sans-serif;
 	font-size: 20px;
@@ -292,21 +355,21 @@ a.menu{
 	padding-top: 10px;
 }
 .blog-navigation a:visited {
-	color: #52C8EE;
+	color: #131313;
 	text-decoration: none;
 	font-family: 'Oswald', sans-serif;
 	font-size: 20px;
 	padding-top: 10px;
 }
 .blog-navigation a:hover {
-  color: white;
+  color: #505050;
   text-decoration: none;
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
   padding-top: 10px;
 }
 .blog-navigation a:active {
-  color: white;
+  color: #131313;
   text-decoration: none;
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
@@ -315,7 +378,7 @@ a.menu{
 .codeSnippets {
   border-radius: 12px;
   padding: 20px;
-  border: 2px solid #52C8EE;
+  border: 2px solid #131313;
   width: 100%;
   font-size: 14px;
   font-family: Consolas, monaco, monospace;
@@ -367,7 +430,7 @@ a.menu{
 }
 .bodyframe-container .bodyframe-card .bodyframe-content h2
 {
-	color: #52C8EE;
+	color: #131313;
 	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase;
 	margin: auto;
@@ -375,14 +438,14 @@ a.menu{
 }
 #footer {
 	font-family: 'Oswald', sans-serif;
-	color: #52C8EE;
+	color: #131313;
 	position: absolute;
 	bottom: 10px;
 	font-size: 25px;
 	display: inline-block;
-	left: 10%;
-	height: 2.5rem;
-	width: 340px;
+	left: 20%;
+	height: 3rem;
+	width: 400px;
 	padding-top: 30px;
 	margin-top: 10px;
 }
@@ -391,10 +454,8 @@ a.menu{
 	display: inline-block;
 	margin-left: auto;
 	margin-right: auto;
-	float: right;
 	width: 40px;
 	padding-left: 10px;
-	
 }
 .socials .image{
 	background: white;
@@ -409,7 +470,7 @@ a.socials:before {
   height: 2px;
   bottom: -8px;
   left: 10px;
-  background-color: #52C8EE;
+  background-color: #131313;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out;
@@ -419,11 +480,11 @@ a.socials:hover:before {
   transform: scaleX(1);
 }
 .socials:hover .image {
-  background: #52C8EE;
+  background: #131313;
 }
 /* links */
 .menu a:link {
-	color: #52C8EE;
+	color: #131313;
 	text-decoration: none;
 	font-family: 'Oswald', sans-serif;
 	font-size: 35px;
@@ -431,21 +492,21 @@ a.socials:hover:before {
 	padding: 10px;
 }
 .menu a:visited {
-	color: #52C8EE;
+	color: #131313;
 	text-decoration: none;
 	font-family: 'Oswald', sans-serif;
 	font-size: 35px;
 	padding: 10px;
 }
 .menu a:hover {
-  color: white;
+  color: #131313;
   text-decoration: none;
   font-family: 'Oswald', sans-serif;
   font-size: 35px;
   padding: 10px;
 }
 .menu a:active {
-  color: white;
+  color: #131313 ;
   text-decoration: none;
   font-family: 'Oswald', sans-serif;
   font-size: 35px;
@@ -454,7 +515,7 @@ a.socials:hover:before {
 .home-screen{
 	position: relative;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	height: 70vh;
 	flex-wrap: wrap;
@@ -462,42 +523,17 @@ a.socials:hover:before {
 	margin: auto;
 }
 .home-screen h1{
-	position: absolute;
-	right: 40px;
-	font-size: 8vw;
-	color: rgba(255, 255, 255, 0.05);
+	font-size: 3rem;
+	color: #131313;
 	pointer-events: none;
 	justify-content: right;
 	align-items: right;
 	text-align: right;
-	box-shadow: 500px 90px 90px rgba(0, 0, 0, 0.3);
 }
 .hidden {
   opacity:0;
 }
-.home-inspirational {
-	font-family: 'Oswald', sans-serif;
-	font-size:25px;
-	text-align:left;
-	height: 10%;
-	max-width: 30%;
-	position:relative;
-	top: 5vh;
-	right: 35%;
-}
-.home-inspirational-underscore{
-	display:inline-block;
-	position:relative;
-	left:1px;
-}
-.home-png{
-	margin-left: 20vh;
-	margin-bottom: -30vh;
-	height: 40vh;
-}
-.home-png-anim{
-	animation: glitch 0.2s 0.2s 2;
-}
+
 @keyframes glitch {
   49%{
     opacity: 0%;
@@ -529,13 +565,12 @@ a.socials:hover:before {
 }
 .games-inspirational {
 	font-family: 'Oswald', sans-serif;
-	font-size:25px;
-	text-align:left;
+	font-size:1rem;
+	text-align:right;
 	height: 10%;
-	max-width: 30%;
 	position:relative;
 	top: 5vh;
-	right: 35%;
+	height: 3rem;
 }
 .games-inspirational-underscore{
 	display:inline-block;
@@ -565,27 +600,59 @@ a.socials:hover:before {
 }
 /* links for main */
 .main a:link {
-	color: lightblue;
-	text-decoration: none;
+	color: #131313;
+	text-decoration: underline;
 	font-weight: bold;
 }
 .main a:visited {
-	color: lightblue;
-	text-decoration: none;
+	color: #131313;
+	text-decoration: underline;
 	font-weight: bold;
 }
 .main a:hover {
-	color: #EBECF8;
+	color: #505050;
 	text-decoration: none;
 	font-weight: bold;
 }
 .main a:active {
-	color: #EBECF8;
+	color: #505050;
 	text-decoration: none;
 	font-weight: bold;
 }
   /* For mobile phones: */
 @media only screen and (max-width:1280px) {
+.img-main-logo{
+	width: 5rem;
+	margin-left: -1rem;
+}
+.content h1{
+	font-size: 2rem;
+	margin-right: 0rem;
+	text-align: right;
+	margin-bottom: -1rem;
+}  
+.content h2{
+	font-size: 1.1rem;
+	text-align: right;
+	margin-bottom: -0.5rem;
+}
+.content h3{
+	font-size: 0.8rem;
+	text-align: right;
+	margin-bottom: -0.5rem;
+	font-weight: 300;
+}
+.home-inspirational {
+	font-size: 0.8rem;
+}
+#footer {
+	left: 2%;
+}
+.youtube-video{
+	width: 300px;
+	height: 168.75px;
+}
+
   .main, .rowf, .blogs, .blog {
     width:90%;
     margin-left: 3%;
@@ -663,8 +730,7 @@ a.socials:hover:before {
 	opacity: 1;
 }
 .home-inspirational{
-	max-width: 70%;
-	left: -5%;
+
 	top: 10vh;
 }
 .home-screen{
@@ -688,8 +754,7 @@ a.socials:hover:before {
 	transform: translateY(0px);
 }
 .games-inspirational{
-	max-width: 70%;
-	left: -5%;
+	height: 3rem;
 	top: 3vh;
 }
 .games-container .games-card
@@ -729,6 +794,10 @@ a.socials:hover:before {
     margin-left: 4%;
     margin-right: 5%;
   }
+  .youtube-video{
+	width: 400px;
+	height: 225px;
+}
   .column {
   float: left;
   width: 49%;
@@ -796,8 +865,7 @@ a.socials:hover:before {
 	opacity: 1;
 }
 .home-inspirational{
-	max-width: 70%;
-	left: -5%;
+	height: 3rem;
 	top: 10vh;
 }
 .home-screen{
@@ -821,9 +889,8 @@ a.socials:hover:before {
 	transform: translateY(0px);
 }
 .games-inspirational{
-	max-width: 70%;
-	left: -5%;
 	top: 3vh;
+	height: 3rem;
 }
 .games-container .games-card
 {
