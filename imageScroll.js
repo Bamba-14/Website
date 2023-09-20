@@ -8,6 +8,7 @@ var slideIndex7 = 0;
 var slideIndex8 = 0;
 var slideIndex9 = 0;
 var slideIndex10 = 0;
+var slideIndex11 = 0;
 carousel1();
 carousel2();
 carousel3();
@@ -18,6 +19,7 @@ carousel7();
 carousel8();
 carousel9();
 carousel10();
+carousel11();
 
 function carousel1() {
   var i;
@@ -128,4 +130,15 @@ function carousel10() {
   if (slideIndex10 > x.length) {slideIndex10 = 1}
   x[slideIndex10-1].style.display = "block";
   setTimeout(carousel10, 2000); // Change image every 2 seconds
+}
+function carousel11() {
+  var i;
+  var x = document.getElementsByClassName("slidesSOF");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex11++;
+  if (slideIndex11 > x.length) {slideIndex11 = 1}
+  x[slideIndex11-1].style.display = "block";
+  setTimeout(carousel11, 2000); // Change image every 2 seconds
 }
